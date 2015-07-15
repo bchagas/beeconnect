@@ -10,10 +10,35 @@
     <title><%= current_page.data.title || "iShop" %></title>
 
     <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag  "application" %>
+    <%= javascript_include_tag  "application", "page-transition" %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <header>
+      <div class="content">
+        <h1 class="logo"><%= link_to "iShop", "/" %></h1>
+        <nav>
+          <ul>
+            <% ["Sobre", "Parceiros", "Ajuda", "Contato"].each do |item| %>
+              <%= content_tag :li, link_to(item, item.parameterize) %>
+            <% end %>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="ishop">
+      <%= yield %>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+      $(document).ready(function() {
+        iShop.setPageTransition(".ishop, body");
+      });
+    </script>
   </body>
 </html>
