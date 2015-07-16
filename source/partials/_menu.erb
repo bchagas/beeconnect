@@ -1,0 +1,5 @@
+<ul>
+  <% ["Sobre", "Parceiros", "Ajuda", "Contato"].each do |item| %>
+    <%= content_tag :li, link_to(item, item.parameterize) %>
+  <% end %>
+</ul>

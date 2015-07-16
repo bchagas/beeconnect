@@ -18,11 +18,7 @@
       <div class="content">
         <h1 class="logo"><%= link_to "iShop", "/" %></h1>
         <nav>
-          <ul>
-            <% ["Sobre", "Parceiros", "Ajuda", "Contato"].each do |item| %>
-              <%= content_tag :li, link_to(item, item.parameterize) %>
-            <% end %>
-          </ul>
+          <%= partial "partials/menu" %>
         </nav>
       </div>
     </header>
@@ -32,7 +28,21 @@
     </main>
 
     <footer>
+      <h1><%= link_to "iShop", "/" %></h1>
+      <%= partial "partials/menu" %>
 
+      <ul class="social">
+        <% ["Facebook", "Twitter"].each do |social| %>
+          <%= content_tag :li, link_to(social, social.parameterize) %>
+        <% end %>
+      </ul>
+
+      <ul class="app-rules">
+        <li><%= link_to "Termos de uso", ""%></li>
+        <li><%= link_to "Privacidade", ""%></li>
+      </ul>
+
+      <p class="copyright">&copy; Copyright iShop | All rights reserved</p>
     </footer>
 
     <script>
