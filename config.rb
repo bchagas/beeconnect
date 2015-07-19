@@ -53,27 +53,6 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-set :file_watcher_ignore,[
-  /^bin(\/|$)/,
-  /^\.bundle(\/|$)/,
-#   /^vendor(\/|$)/,
-  /^node_modules(\/|$)/,
-  /^\.sass-cache(\/|$)/,
-  /^\.cache(\/|$)/,
-  /^\.git(\/|$)/,
-  /^\.gitignore$/,
-  /\.DS_Store/,
-  /^\.rbenv-.*$/,
-  /^Gemfile$/,
-  /^Gemfile\.lock$/,
-  /~$/,
-  /(^|\/)\.?#/,
-  /^tmp\//
-]
-
-#Use bower
-activate :bower
-
 #Deploy to Git
 activate :deploy do |deploy|
   deploy.method = :git
@@ -103,6 +82,4 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-#Sprockets config
-activate :sprockets
 sprockets.import_asset 'logo@2x.png'

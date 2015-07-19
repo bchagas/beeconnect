@@ -1,5 +1,5 @@
 namespace :assets do
   task :precompile do
-    sh 'bower install && middleman build --verbose'
+    sh 'middleman build --verbose'
   end
 end
