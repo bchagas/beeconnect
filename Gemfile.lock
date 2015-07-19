@@ -133,6 +133,7 @@ DEPENDENCIES
   middleman (~> 3.3.12)
   middleman-bower
   middleman-deploy (~> 1.0)
+  middleman-sprockets
   neat
   puma
 

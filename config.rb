@@ -104,4 +104,5 @@ configure :build do
 end
 
 #Sprockets config
+activate :sprockets
 sprockets.import_asset 'logo@2x.png'
