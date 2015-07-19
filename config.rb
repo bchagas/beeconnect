@@ -53,6 +53,9 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+#Use bower
+activate :bower
+
 #Deploy to Git
 activate :deploy do |deploy|
   deploy.method = :git
