@@ -1,3 +1,91 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+/* line 6, /Users/brunochagas/Documents/Workspace/Projects/iShop/source/stylesheets/utilities/_reset.sass */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 24, /Users/brunochagas/Documents/Workspace/Projects/iShop/source/stylesheets/utilities/_reset.sass */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 28, /Users/brunochagas/Documents/Workspace/Projects/iShop/source/stylesheets/utilities/_reset.sass */
+ol, ul {
+  list-style: none; }
+
+/* line 31, /Users/brunochagas/Documents/Workspace/Projects/iShop/source/stylesheets/utilities/_reset.sass */
+blockquote, q {
+  quotes: none; }
+
+/* line 34, /Users/brunochagas/Documents/Workspace/Projects/iShop/source/stylesheets/utilities/_reset.sass */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+/* line 39, /Users/brunochagas/Documents/Workspace/Projects/iShop/source/stylesheets/utilities/_reset.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 43, /Users/brunochagas/Documents/Workspace/Projects/iShop/source/stylesheets/utilities/_reset.sass */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 49, /Users/brunochagas/Documents/Workspace/Projects/iShop/source/stylesheets/utilities/_reset.sass */
+sup {
+  top: -0.5em; }
+
+/* line 52, /Users/brunochagas/Documents/Workspace/Projects/iShop/source/stylesheets/utilities/_reset.sass */
+sub {
+  bottom: -0.25em; }
+
+/* line 2, /Users/brunochagas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/neat-1.5.0/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 11, /Users/brunochagas/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/neat-1.5.0/app/assets/stylesheets/grid/_visual-grid.scss */
+body:before {
+  content: '';
+  display: inline-block;
+  background-image: deprecated-webkit-gradient(linear, left top, left bottom, transparent 0, red 0, red 6.38298%, transparent 6.38298%, transparent 8.51064%, red 8.51064%, red 14.89362%, transparent 14.89362%, transparent 17.02128%, red 17.02128%, red 23.40426%, transparent 23.40426%, transparent 25.53191%, red 25.53191%, red 31.91489%, transparent 31.91489%, transparent 34.04255%, red 34.04255%, red 40.42553%, transparent 40.42553%, transparent 42.55319%, red 42.55319%, red 48.93617%, transparent 48.93617%, transparent 51.06383%, red 51.06383%, red 57.44681%, transparent 57.44681%, transparent 59.57447%, red 59.57447%, red 65.95745%, transparent 65.95745%, transparent 68.08511%, red 68.08511%, red 74.46809%, transparent 74.46809%, transparent 76.59574%, red 76.59574%, red 82.97872%, transparent 82.97872%, transparent 85.10638%, red 85.10638%, red 91.48936%, transparent 91.48936%, transparent 93.61702%, red 93.61702%, red 100.0%, transparent 100.0%);
+  background-image: -webkit-linear-gradient(left, transparent 0, red 0, red 6.38298%, transparent 6.38298%, transparent 8.51064%, red 8.51064%, red 14.89362%, transparent 14.89362%, transparent 17.02128%, red 17.02128%, red 23.40426%, transparent 23.40426%, transparent 25.53191%, red 25.53191%, red 31.91489%, transparent 31.91489%, transparent 34.04255%, red 34.04255%, red 40.42553%, transparent 40.42553%, transparent 42.55319%, red 42.55319%, red 48.93617%, transparent 48.93617%, transparent 51.06383%, red 51.06383%, red 57.44681%, transparent 57.44681%, transparent 59.57447%, red 59.57447%, red 65.95745%, transparent 65.95745%, transparent 68.08511%, red 68.08511%, red 74.46809%, transparent 74.46809%, transparent 76.59574%, red 76.59574%, red 82.97872%, transparent 82.97872%, transparent 85.10638%, red 85.10638%, red 91.48936%, transparent 91.48936%, transparent 93.61702%, red 93.61702%, red 100.0%, transparent 100.0%);
+  background-image: -moz-linear-gradient(left, transparent 0, red 0, red 6.38298%, transparent 6.38298%, transparent 8.51064%, red 8.51064%, red 14.89362%, transparent 14.89362%, transparent 17.02128%, red 17.02128%, red 23.40426%, transparent 23.40426%, transparent 25.53191%, red 25.53191%, red 31.91489%, transparent 31.91489%, transparent 34.04255%, red 34.04255%, red 40.42553%, transparent 40.42553%, transparent 42.55319%, red 42.55319%, red 48.93617%, transparent 48.93617%, transparent 51.06383%, red 51.06383%, red 57.44681%, transparent 57.44681%, transparent 59.57447%, red 59.57447%, red 65.95745%, transparent 65.95745%, transparent 68.08511%, red 68.08511%, red 74.46809%, transparent 74.46809%, transparent 76.59574%, red 76.59574%, red 82.97872%, transparent 82.97872%, transparent 85.10638%, red 85.10638%, red 91.48936%, transparent 91.48936%, transparent 93.61702%, red 93.61702%, red 100.0%, transparent 100.0%);
+  background-image: -ms-linear-gradient(left, transparent 0, red 0, red 6.38298%, transparent 6.38298%, transparent 8.51064%, red 8.51064%, red 14.89362%, transparent 14.89362%, transparent 17.02128%, red 17.02128%, red 23.40426%, transparent 23.40426%, transparent 25.53191%, red 25.53191%, red 31.91489%, transparent 31.91489%, transparent 34.04255%, red 34.04255%, red 40.42553%, transparent 40.42553%, transparent 42.55319%, red 42.55319%, red 48.93617%, transparent 48.93617%, transparent 51.06383%, red 51.06383%, red 57.44681%, transparent 57.44681%, transparent 59.57447%, red 59.57447%, red 65.95745%, transparent 65.95745%, transparent 68.08511%, red 68.08511%, red 74.46809%, transparent 74.46809%, transparent 76.59574%, red 76.59574%, red 82.97872%, transparent 82.97872%, transparent 85.10638%, red 85.10638%, red 91.48936%, transparent 91.48936%, transparent 93.61702%, red 93.61702%, red 100.0%, transparent 100.0%);
+  background-image: -o-linear-gradient(left, transparent 0, red 0, red 6.38298%, transparent 6.38298%, transparent 8.51064%, red 8.51064%, red 14.89362%, transparent 14.89362%, transparent 17.02128%, red 17.02128%, red 23.40426%, transparent 23.40426%, transparent 25.53191%, red 25.53191%, red 31.91489%, transparent 31.91489%, transparent 34.04255%, red 34.04255%, red 40.42553%, transparent 40.42553%, transparent 42.55319%, red 42.55319%, red 48.93617%, transparent 48.93617%, transparent 51.06383%, red 51.06383%, red 57.44681%, transparent 57.44681%, transparent 59.57447%, red 59.57447%, red 65.95745%, transparent 65.95745%, transparent 68.08511%, red 68.08511%, red 74.46809%, transparent 74.46809%, transparent 76.59574%, red 76.59574%, red 82.97872%, transparent 82.97872%, transparent 85.10638%, red 85.10638%, red 91.48936%, transparent 91.48936%, transparent 93.61702%, red 93.61702%, red 100.0%, transparent 100.0%);
+  background-image: linear-gradient(left, transparent 0, red 0, red 6.38298%, transparent 6.38298%, transparent 8.51064%, red 8.51064%, red 14.89362%, transparent 14.89362%, transparent 17.02128%, red 17.02128%, red 23.40426%, transparent 23.40426%, transparent 25.53191%, red 25.53191%, red 31.91489%, transparent 31.91489%, transparent 34.04255%, red 34.04255%, red 40.42553%, transparent 40.42553%, transparent 42.55319%, red 42.55319%, red 48.93617%, transparent 48.93617%, transparent 51.06383%, red 51.06383%, red 57.44681%, transparent 57.44681%, transparent 59.57447%, red 59.57447%, red 65.95745%, transparent 65.95745%, transparent 68.08511%, red 68.08511%, red 74.46809%, transparent 74.46809%, transparent 76.59574%, red 76.59574%, red 82.97872%, transparent 82.97872%, transparent 85.10638%, red 85.10638%, red 91.48936%, transparent 91.48936%, transparent 93.61702%, red 93.61702%, red 100.0%, transparent 100.0%);
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 58.75em;
+  opacity: 0.4;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 9999; }
+
 /*!
  * animsition v3.5.2
  * http://blivesta.github.io/animsition/
