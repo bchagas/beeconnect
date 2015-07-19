@@ -7,5 +7,7 @@ gem "jquery-middleman"
 
 gem "puma"
 
+gem "rack-contrib"
+
 gem "bourbon"
 gem "neat"
