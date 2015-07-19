@@ -5,5 +5,7 @@ gem "middleman-deploy", "~> 1.0"
 gem "middleman-livereload", "~> 3.1.0"
 gem "middleman-bower"
 
+gem "puma"
+
 gem "bourbon"
 gem "neat"
