@@ -1,0 +1,20 @@
+body
+  > header
+    padding-top: 65px
+
+    .logo
+      +span-columns(2)
+
+    nav
+      +span-columns(7)
+      +shift(3)
+      +padding(6px null null null)
+
+    ul
+      +display(flex)
+      +justify-content(space-between)
+
+    a
+      color: white
+      font-size: $default-links-font-size
+      line-height: $default-links-line-height

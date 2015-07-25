@@ -1,10 +1,53 @@
 .content
   +outer-container
 
-body
-  > header
-    .logo
-      +span-columns(2)
+.index
+  +at2x("images/home/header", "png", auto, 788px)
+  background-repeat: repeat-x
 
-    nav
-      +span-columns(10)
+  [role="banner"]
+    padding-top: 68px
+
+    .app-screenshot
+      +span-columns(5)
+
+    header,
+    .download-app
+      +span-columns(7)
+      padding-left: rem(35)
+      margin-right: 0
+
+      &:last-child
+        margin-left: 0
+
+    header
+      padding-top: 72px
+      margin-bottom: 50px
+
+    h1,
+    h2
+      color: white
+
+    h1
+      font-size: rem(53)
+      line-height: rem(68px)
+      margin-bottom: 17px
+
+    h2
+      font-size: rem(18)
+      line-height: rem(25)
+      font-weight: lighter
+
+    ul
+      overflow: hidden
+
+    li
+      display: inline
+      float: right
+
+      &:first-child
+        float: left
+
++media($mobile)
+  .index
+    background: none
