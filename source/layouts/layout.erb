@@ -30,21 +30,24 @@
     </main>
 
     <footer>
-      <h1><%= link_to image_tag("logo-color.png"), "/" %></h1>
-      <%= partial "partials/menu" %>
+      <div class="content">
+        <h1 class="logo"><%= link_to image_tag("logo-color.png"), "/" %></h1>
 
-      <ul class="social">
-        <% ["Facebook", "Twitter"].each do |social| %>
-          <%= content_tag :li, link_to(social, social.parameterize) %>
-        <% end %>
-      </ul>
+        <%= partial "partials/menu" %>
 
-      <ul class="app-rules">
-        <li><%= link_to "Termos de uso", ""%></li>
-        <li><%= link_to "Privacidade", ""%></li>
-      </ul>
+        <ul class="social">
+          <% ["Facebook", "Twitter"].each do |social| %>
+            <%= content_tag :li, partial("partials/#{social.parameterize}") %>
+          <% end %>
+        </ul>
 
-      <p class="copyright">&copy; Copyright iShop | All rights reserved</p>
+        <ul class="app-rules">
+          <li><%= link_to "Termos de uso", ""%></li>
+          <li><%= link_to "Privacidade", ""%></li>
+        </ul>
+
+        <p class="copyright">&copy; Copyright iShop | All rights reserved</p>
+      </div>
     </footer>
 
     <script>
