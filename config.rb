@@ -64,6 +64,9 @@ activate :deploy do |deploy|
   # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
 end
 
+activate :bourbon
+activate :neat
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
