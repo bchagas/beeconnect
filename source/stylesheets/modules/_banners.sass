@@ -14,10 +14,47 @@
   a
     +span-columns(1)
     +shift(3)
-    +padding(32px null null)
+    +padding(40px null null)
 
   h1
     @extend %h1-font-size
+    margin-bottom: 17px
 
   p
     @extend %subtitle
+
+.apps
+  +padding(103px null)
+
+  li
+    +span-columns(6)
+
+  figure
+    +span-columns(1 of 6)
+    +padding(30px 5px 30px null)
+
+  h2
+    color: $black-40
+    margin-bottom: 15px
+
+  p
+    color: $black-25
+    margin-bottom: 25px
+
+  a
+    color: $blue-40
+
+.highlight
+  background-color: $yellow-50
+  overflow: hidden
+  +fill-parent
+
+  img
+    float: left
+
+  figcaption
+    color: white
+    font-size: rem(16)
+    line-height: rem(40)
+    +span-columns(7)
+    +padding(11.8% 43px)
