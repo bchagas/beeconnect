@@ -28,10 +28,6 @@
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
-###
-# Helpers
-###
-
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
@@ -41,11 +37,16 @@ activate :automatic_image_sizes
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def image_asset_path(asset)
+    "images/#{asset}"
+  end
+
+  def image_tag_with_at2x(name_at_1x, options={})
+    name_at_2x = name_at_1x.gsub(%r{\.\w+$}, '@2x\0')
+    image_tag(name_at_1x, options.merge("data-at2x" => image_asset_path(name_at_2x)))
+  end
+end
 
 set :css_dir, 'stylesheets'
 
