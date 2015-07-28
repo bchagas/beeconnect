@@ -1,15 +1,32 @@
+$pages: "index" "sobre"
+$folder: null
+
 .content
   +outer-container
 
+@each $page in $pages
+  @if $page == "index"
+    $folder: "home"
+  @if $page == "sobre"
+    $folder: "about"
+
+  .#{$page}
+    +at2x("images/#{$folder}/header", "jpg", 100%)
+    background-repeat: no-repeat
+    background-position: center top
+
+[role="banner"]
+  color: white
+  padding-top: 68px
+
+  & + section
+    background: white
+
 .index
-  +at2x("images/home/header", "jpg", auto, 788px)
-  background-repeat: repeat-x
-
   [role="banner"]
-    padding-top: 68px
-
-    .app-screenshot
+    figure
       +span-columns(5)
+      height: 598px
 
     header,
     .download-app
@@ -23,10 +40,6 @@
     header
       padding-top: 72px
       margin-bottom: 50px
-
-    h1,
-    h2
-      color: white
 
     h1
       @extend %h1-font-size
@@ -44,6 +57,44 @@
 
       &:first-child
         float: left
+
+.sobre
+  .description
+    +span-columns(7)
+    font-size: rem(24)
+    line-height: rem(60)
+    padding-top: 126px
+
+  figure
+    +span-columns(5)
+    height: 502px
+
+  .highlight
+    padding: 88px 0
+    text-align: center
+
+    h1
+      color: $black-45
+      font-size: rem(27)
+
+  .about
+    +at2x("images/about/highlight", "jpg", 100%)
+    background-repeat: none
+    background-position: center center
+    height: 640px
+
+    p
+      background-color: white
+      color: $black-20
+      font-size: rem(16)
+      line-height: rem(50)
+      float: right
+      margin: 97px 0
+      +padding(72px 61px)
+      width: 60%
+
+    a
+      color: $blue-50
 
 +media($mobile)
   .index
