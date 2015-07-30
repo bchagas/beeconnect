@@ -3,5 +3,59 @@ title: iShop - Parceiros iShop
 ---
 
 <section class="header">
-  <p>Conectamos a marca ao consumidor gerando inteligência e interatividade</p>
+  <div class="content">
+    <p>Conectamos a marca ao consumidor gerando inteligência e interatividade</p>
+    <%= link_to "Criar conta", "" %>
+    <form>
+      <legend>
+        <span class="title">Login</span>
+        <span class="subtitle">
+          Se você já é parceiro,
+          faça o login para gerenciar suas campanhas
+          e acompanhar seus resultados
+        </span>
+      </legend>
+      <fieldset class="inputs">
+        <ol>
+          <li class="input"><input type="email" placeholder="Conta" /></li>
+          <li class="input"><input type="password" placeholder="Senha" /></li>
+        </ol>
+      </fieldset>
+
+      <fieldset class="actions">
+        <ol>
+          <li><button type="submit">Aceitar</button></li>
+        </ol>
+      </fieldset>
+    </form>
+  </div>
+</section>
+
+<blockquote>
+  O iShop está presente em todo o ciclo de compra do usuário,
+  <br>
+  desde a casa dele até loja.
+</blockquote>
+
+<section class="slider">
+
+</section>
+
+<blockquote>
+  Nós levamos o comprador à loja e o conectamos com os produtos
+  <br>
+  de acordo  com os objetivos de cada parceiro.
+</blockquote>
+
+<section class="advantages">
+  <div class="content">
+    <ul>
+      <% data.advantages.advantages.each do |advantage| %>
+        <li>
+          <%= image_tag_with_at2x("icons/#{advantage.icon}") %>
+          <p><%= advantage.text %></p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 </section>

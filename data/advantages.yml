@@ -1,0 +1,33 @@
+advantages:
+  - leads:
+    text: "Gerar leads qualificados"
+    icon: "lead.png"
+
+  - inteligence:
+    text: "Gerar inteligência sobre o perfil e comportamento do cliente no PDV"
+    icon: "graph.png"
+
+  - buy:
+    text: "Usar informações e tecnologia mobile para melhorar experiência do cliente na loja"
+    icon: "buy.png"
+
+  - chat:
+    text: "Criar um canal de comunicação com o cliente dentro e fora do PDV"
+    icon: "chat.png"
+
+  - big_data:
+    text: "Abastecer sistema de Big Data com outras fontes de informação "
+    icon: "settings.png"
+
+  - network:
+    text: "Fortalecer campanhas de marketing omnichannel"
+    icon: "networking.png"
+
+  - customer:
+    text: "Levar os consumidores diretamente ao produto"
+    icon: "customers.png"
+
+  - money:
+    text: "Aumentar a taxa de conversão e o ticket médio"
+    icon: "money.png"
+
