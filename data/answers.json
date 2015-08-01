@@ -1,0 +1,16 @@
+{
+  "answers": [
+    {
+      "title" : "Como posso re-acessar minha conta se eu for desconectado?",
+      "content" : "<p>Se você recebeu a mensagem de que seu email /  número de telefone já está sendo utilizado, há chances de você já ter criado uma conta anteriormente. Para testar essa possibilidade:</p><ul><li>Pressione a opção (...)</li><li>Na página que aparecer, você verá as opções “Registre-se” ou “Entre”</li><li>Se você possui uma conta no Facebook, tente primeiramente esta opção (que é a mais ráṕida); Caso contrário, pressione a opção “entrar manualmente”, e tente então entrar utilizando seu email e uma senha.</li></ul><p>Caso você continue com problemas, entre em contato com nossa equipe de atendimento ao cliente, que estará a postos para te auxiliar.</p>"
+    },
+    { "title" : "Minha Conta" },
+    { "title" : "Amigos Convite" },
+    { "title" : "Cupons" },
+    { "title" : "Problemas técnicos" },
+    { "title" : "Configurações" },
+    { "title" : "Ativando o serviço de localização" },
+    { "title" : "Ativando o bluetooth" }
+  ]
+}
+

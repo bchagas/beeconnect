@@ -1,0 +1,20 @@
+{
+  "questions": [
+    { "title" : "Principais perguntas" },
+    {
+      "title" : "Minha Conta",
+      "questions" : {
+        "1" : "Como posso re-acessar minha conta se eu for desconectado?",
+        "2" : "O que devo fazer se eu esquecer minhas informacoes de loging?",
+        "3" : "Eu preciso me registrar para utilizar o iShop?",
+        "4" : "Por que quando tento me registrar, eu recebo a mensagem que o meu email já está sendo utilizado?"
+      }
+    },
+    { "title" : "Amigos Convite" },
+    { "title" : "Cupons" },
+    { "title" : "Problemas técnicos" },
+    { "title" : "Configurações" },
+    { "title" : "Ativando o serviço de localização" },
+    { "title" : "Ativando o bluetooth" }
+  ]
+}

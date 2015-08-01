@@ -7,3 +7,38 @@ title: iShop - Precisando de ajuda?
     <h2>Tem uma dúvida? Estamos prontos para ajudar</h2>
   </div>
 </section>
+
+<section class="top-questions">
+  <div class="content">
+    <h2>Principais dúvidas</h2>
+    <ul>
+      <li><%= link_to "O que é iShop?", ""%></li>
+      <li><%= link_to "Como usar o aplicativo iShop?", ""%></li>
+      <li><%= link_to "Porque minha conta sumiu?", ""%></li>
+      <li><%= link_to "Onde posso encontrar as promoções?", ""%></li>
+    </ul>
+  </div>
+</section>
+
+<section class="all-questions">
+  <div class="content">
+    <nav>
+      <ul class="questions">
+        <% data.faq.questions.each do |question| %>
+          <li id="<%= question.title.parameterize %>">
+            <span class="title"><%= link_to question.title, "##{question.title.parameterize}" %></span>
+            <% if question.questions.present? %>
+               <ul class="topics">
+                <% question.questions.each do |key, value| %>
+                  <li><%= link_to value, "ajuda/#{value.parameterize}" %></li>
+                <% end %>
+              </ul>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+    </nav>
+
+    <div class="answer"></div>
+  </div>
+</section>

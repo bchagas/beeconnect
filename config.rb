@@ -10,7 +10,7 @@
 ###
 # Page options, layouts, aliases and proxies
 ###
-
+#
 # Per-page layout changes:
 #
 # With no layout
@@ -25,6 +25,10 @@
 # end
 
 # Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
+data.answers.answers.each do |answer|
+  proxy "/ajuda/#{answer.title.parameterize}", "/ajuda/template.html", layout: false, locals: { answer: answer.content.present? ? answer.content : "" }, :ignore => true
+end
+
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
@@ -39,7 +43,7 @@ activate :automatic_image_sizes
 # Methods defined in the helpers block are available in templates
 helpers do
   def image_asset_path(asset)
-    "images/#{asset}"
+    "/images/#{asset}"
   end
 
   def image_tag_with_at2x(name_at_1x, options={})

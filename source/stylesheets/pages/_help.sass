@@ -5,3 +5,59 @@
       line-height: rem(80)
       +padding(36px null null)
       text-align: center
+
+  .top-questions
+    > .content
+      background-color: $blue-2
+      border-radius: 10px
+      +padding(31px 43px)
+
+    h2
+      +at2x("icons/cup", "png", 24px)
+      background-repeat: no-repeat
+      background-position: center left
+      color: $blue-35
+      +padding(null null null 28px)
+      +size(245px auto)
+      +margin(null auto 56px)
+
+    a
+      color: $black-45
+
+    li
+      +span-columns(6)
+
+    li
+      +margin(null 0)
+      +size(50% auto)
+
+  .all-questions
+    padding-top: 40px
+
+    nav,
+    .answer
+      +span-columns(6)
+
+    nav
+      border: 2px solid rgba($black-30, .2)
+      +padding(47px 27px)
+
+  .questions
+    > li
+      margin-bottom: 24px
+
+      a
+        color: $black-22
+        font-size: rem(19)
+
+        &:hover,
+        &.active
+          color: $blue-35
+          font-weight: 400
+
+  .topics
+    > li
+      margin-bottom: 20px
+
+      a
+        font-size: rem(15)
