@@ -46,6 +46,10 @@ helpers do
     name_at_2x = name_at_1x.gsub(%r{\.\w+$}, '@2x\0')
     image_tag(name_at_1x, options.merge("data-at2x" => image_asset_path(name_at_2x)))
   end
+
+  def last_of(value, index)
+    index % 4 === 3 ? "last" : ""
+  end
 end
 
 set :css_dir, 'stylesheets'
