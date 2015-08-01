@@ -55,9 +55,11 @@ title: iShop - Parceiros iShop
 <section class="advantages">
   <div class="content">
     <ul>
-      <% data.advantages.advantages.each do |advantage| %>
-        <li>
-          <%= image_tag_with_at2x("icons/#{advantage.icon}") %>
+      <% data.advantages.advantages.each_with_index do |advantage, index| %>
+        <li class="<%= last_of(4, index) %>">
+          <figure>
+            <%= image_tag_with_at2x("icons/#{advantage.icon}") %>
+          </figure>
           <p><%= advantage.text %></p>
         </li>
       <% end %>

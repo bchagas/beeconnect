@@ -22,8 +22,24 @@
 
     legend
       +legend-double($black-22)
-      margin-bottom: 21px
+      +margin(null null 21px)
 
     .actions
-      padding-top: 20px
+      +padding(20px null null)
       text-align: center
+
+  .advantages
+    li
+      color: $black-50
+      font-size: rem(17)
+      +span-columns(3)
+      +margin(null null 115px null)
+      +padding(null 20px)
+      text-align: center
+
+      &.last
+        +margin(null 0)
+
+    figure
+      +size(auto 91px)
+      margin-bottom: 20px
