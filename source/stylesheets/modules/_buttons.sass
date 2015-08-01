@@ -1,0 +1,31 @@
+@function assign-inputs($inputs, $pseudo: null)
+  $list: ()
+  @each $input in $inputs
+    $input: unquote($input)
+    $input: if($pseudo, $input + ":" + $pseudo, $input)
+    $list: append($list, $input, comma)
+  @return $list
+
+
+$buttons-list: 'button', 'input[type="button"]', 'input[type="reset"]', 'input[type="submit"]'
+
+$all-buttons: assign-inputs($buttons-list)
+$all-buttons-active: assign-inputs($buttons-list, active)
+$all-buttons-focus: assign-inputs($buttons-list, focus)
+$all-buttons-hover: assign-inputs($buttons-list, hover)
+
+$all-button-inputs: $all-buttons
+$all-button-inputs-active: $all-buttons-active
+$all-button-inputs-focus: $all-buttons-focus
+
+=button($color, $side_padding: 41px)
+  background-color: $color
+  border: 2px solid white
+  border-radius: 100px
+  color: white
+  font-size: rem(18)
+  +padding(11px $side_padding)
+  +transition(all .2s ease-in-out)
+
+  &:hover
+    background-color: darken($color, 25%)

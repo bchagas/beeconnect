@@ -19,6 +19,7 @@ $folder: null
 
 section.header
   color: white
+  min-height: 570px
   padding-top: 68px
 
   & + section
@@ -66,36 +67,6 @@ blockquote
 
       &:first-child
         float: left
-
-.sobre
-  .description
-    +span-columns(7)
-    font-size: rem(24)
-    line-height: rem(60)
-    padding-top: 126px
-
-  figure
-    +span-columns(5)
-    height: 502px
-
-  .about
-    +at2x("images/about/highlight", "jpg", 100%)
-    background-repeat: none
-    background-position: center center
-    height: 640px
-
-    p
-      background-color: white
-      color: $black-20
-      font-size: rem(16)
-      line-height: rem(50)
-      float: right
-      margin: 97px 0
-      +padding(72px 61px)
-      width: 60%
-
-    a
-      color: $blue-50
 
 +media($mobile)
   .index

@@ -1,0 +1,46 @@
+=form-content
+  background: white
+  border-radius: 5px
+  margin: 0 auto
+  padding: 27px 37px
+  width: 96%
+
+=legend-double($color)
+  .title,
+  .subtitle
+    color: $color
+    display: block
+
+  .title
+    font-size: rem(25)
+    margin-bottom: 16px
+
+  .subtitle
+    font-size: rem(15)
+    line-height: rem(25)
+    +opacity(.57)
+
+=inputs
+  ol > .input
+    margin-bottom: 18px
+
+  #{$all-text-inputs}
+    background-color: rgba($black-10, .1)
+    border: 1px solid rgba($black-42, .1)
+    color: $black-8
+    font:
+      family: $muli
+      size: rem(18)
+    +padding(13px 22px)
+    width: 100%
+
+=send-button
+  #{$all-buttons}
+    +button($blue-20, 75px)
+    cursor: pointer
+    font:
+      family: $muli
+      size: rem(18)
+
+  #{$all-buttons}
+    outline: none
