@@ -95,3 +95,6 @@ configure :build do
 end
 
 sprockets.import_asset 'logo@2x.png'
+
+require 'handlebars_assets'
+sprockets.append_path HandlebarsAssets.path

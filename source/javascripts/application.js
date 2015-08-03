@@ -1,4 +1,4 @@
 //= require jquery
-//= require_tree ./lib/
+//= require_tree ./jquery-lib/
 
 var iShop = iShop || {};

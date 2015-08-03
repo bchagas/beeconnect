@@ -35,6 +35,11 @@ GEM
     git-version-bump (0.15.1)
     haml (4.0.6)
       tilt
+    handlebars_assets (0.18)
+      execjs (>= 1.2.9)
+      multi_json
+      sprockets (>= 2.0.3)
+      tilt
     hike (1.2.3)
     hitimes (1.2.2)
     hooks (0.4.0)
@@ -138,6 +143,7 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon
+  handlebars_assets
   jquery-middleman
   middleman (~> 3.3.12)
   middleman-bourbon

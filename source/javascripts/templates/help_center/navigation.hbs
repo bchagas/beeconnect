@@ -1,0 +1,14 @@
+<ul class="questions">
+  {{#each menu}}
+    <li id="{{parameterize this.title}}">
+      <span class="title">{{link this.title this.title}}</span>
+      {{#if this.questions}}
+        <ul class="topics" data-target="{{parameterize this.title}}">
+          {{#each this.questions }}
+          <li><a href="" data-topic="{{parameterize this}}">{{this}}</a></li>
+          {{/each}}
+        </ul>
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>

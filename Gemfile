@@ -5,6 +5,7 @@ gem "middleman-deploy", "~> 1.0"
 gem "middleman-bourbon"
 gem "middleman-neat"
 gem "jquery-middleman"
+gem "handlebars_assets"
 
 gem "puma"
 
