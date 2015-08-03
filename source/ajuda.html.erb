@@ -22,23 +22,16 @@ title: iShop - Precisando de ajuda?
 
 <section class="all-questions">
   <div class="content">
-    <nav>
-      <ul class="questions">
-        <% data.faq.questions.each do |question| %>
-          <li id="<%= question.title.parameterize %>">
-            <span class="title"><%= link_to question.title, "##{question.title.parameterize}" %></span>
-            <% if question.questions.present? %>
-               <ul class="topics">
-                <% question.questions.each do |key, value| %>
-                  <li><%= link_to value, "ajuda/#{value.parameterize}" %></li>
-                <% end %>
-              </ul>
-            <% end %>
-          </li>
-        <% end %>
-      </ul>
-    </nav>
-
+    <nav></nav>
     <div class="answer"></div>
   </div>
 </section>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "help/application", "help/initialize", "help/files" %>
+
+  <script>
+    var options = <%= data.faq.questions.to_json.html_safe %>;
+    iShop.HelpCenter.initialize({menu: options, el: $(".all-questions nav"), content: $(".answer")});
+  </script>
+<% end %>
