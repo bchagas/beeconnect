@@ -34,9 +34,12 @@
     +padding(13px 22px)
     width: 100%
 
-=send-button
+    +placeholder
+      color: lighten($black-8, 10%)
+
+=send-button($color: $blue-20)
   #{$all-buttons}
-    +button($blue-20, 75px)
+    +button($color, 75px)
     cursor: pointer
     font:
       family: $muli

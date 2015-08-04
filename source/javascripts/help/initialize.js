@@ -7,6 +7,8 @@ iShop.HelpCenter = {
     var normalize_index = 1;
     var last_index = options.menu.length + normalize_index;
 
+
+    // Create search index
     options.indice = [];
 
     _.each(options.menu, function(option, key) {

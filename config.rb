@@ -26,7 +26,7 @@
 
 # Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
 data.answers.answers.each do |answer|
-  proxy "/ajuda/#{answer.title.parameterize}", "/ajuda/template.html", layout: false, locals: { answer: answer.content.present? ? answer.content : "" }, :ignore => true
+  proxy "/ajuda/#{answer.title.parameterize}", "/ajuda/template.html", layout: false, locals: { answer: answer.content.present? ? answer : "" }, :ignore => true
 end
 
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {

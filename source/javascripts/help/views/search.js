@@ -2,7 +2,7 @@ iShop.HelpCenter.Views.HelpCenterSearch = Backbone.View.extend({
   template: HandlebarsTemplates["help_center/search"],
 
   events: {
-    "keyup input[type='search']" : "searchTopic",
+    "keyup input#search" : "searchTopic",
     "click button[type='submit']" : "searchTopic"
   },
 
@@ -30,7 +30,7 @@ iShop.HelpCenter.Views.HelpCenterSearch = Backbone.View.extend({
 
   searchTopic: function() {
     var self = this;
-    var query = this.$("input[type='search']").val();
+    var query = this.$("input#search").val();
     var results = this.index.search(query).map(function (result) {
       return self.indice.filter(function (q) {
         return q.id === parseInt(result.ref, 10);
