@@ -3,15 +3,31 @@ iShop.HelpCenter.Views.HelpCenterMenu = Backbone.View.extend({
 
   events: {
     "click .topics > li > a" : "getTopic",
-    "click .questions > li > span > a" : "showTopics"
+    "click .questions > li > span > a" : "showTopics",
   },
 
   initialize: function(options) {
     this.model = options.model;
+    this.eventAggregator.on("render:result", this.getResultTopic, this);
   },
 
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
+  },
+
+  getResultTopic: function(url) {
+    var self = this;
+
+    this.model.fetchCurrent({
+      data: url,
+      success: function(xhr, data) {
+        self.eventAggregator.trigger("render:topic", data);
+      },
+
+      error: function(xhr, data) {
+        self.eventAggregator.trigger("render:topic", data.responseText);
+      }
+    });
   },
 
   getTopic: function(event) {

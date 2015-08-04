@@ -5,7 +5,7 @@
       {{#if this.questions}}
         <ul class="topics" data-target="{{parameterize this.title}}">
           {{#each this.questions }}
-          <li><a href="" data-topic="{{parameterize this}}">{{this}}</a></li>
+            <li><a href="" data-topic="{{parameterize this.title}}">{{this.title}}</a></li>
           {{/each}}
         </ul>
       {{/if}}
