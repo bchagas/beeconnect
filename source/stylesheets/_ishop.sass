@@ -1,4 +1,4 @@
-$pages: "index" "sobre" "parceiros" "ajuda"
+$pages: "index" "sobre" "parceiros" "ajuda" "contato"
 $folder: null
 
 .content
@@ -13,6 +13,8 @@ $folder: null
     $folder: "partner"
   @if $page == "ajuda"
     $folder: "help"
+  @if $page == "contato"
+    $folder: "contact"
 
   .#{$page}
     +at2x("#{$folder}/header", "jpg", 100%)

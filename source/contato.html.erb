@@ -1,0 +1,57 @@
+---
+title: iShop - Contato
+---
+
+<section class="header">
+  <div class="content">
+    <h2>Sua mensagem é muito importante para nós</h2>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="content">
+    <header>
+      <h2>Contato</h2>
+    </header>
+
+    <aside>
+      <p>Se você tem dúvidas ou gostaria de marcar uma reunião, por favor não hesite em entrar em contato</p>
+      <h3>beeConnect</h3>
+
+      <address>
+        Rua Haddock Lobo, 585, 1º andar <br>
+        São Paulo, SP<br>
+        Brasil
+      </address>
+
+      <a href="mailto:contato@beeconnect.com.br">contato@beeconnect.com.br</a>
+    </aside>
+
+    <% form_tag "/", method: "POST" do %>
+      <% field_set_tag class: "inputs" do %>
+        <ol>
+          <li class="input">
+            <label for="name">Nome</label>
+            <%= text_field_tag :name, id: "name" %>
+          </li>
+
+          <li class="input">
+            <label for="email">Email</label>
+            <%= text_field_tag :email, type: :email, id: "email" %>
+          </li>
+
+          <li class="input">
+            <label for="message">Mensagem</label>
+            <textarea id="message"></textarea>
+          </li>
+        </ol>
+      <% end %>
+
+      <% field_set_tag class: "actions" do %>
+        <ol>
+          <li><%= submit_tag "Enviar" %></li>
+        </ol>
+      <% end %>
+    <% end %>
+  </div>
+</section>
