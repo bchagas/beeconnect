@@ -1,4 +1,46 @@
 .contato
+  color: $black-42
+
   .header
     h2
       @extend %header-text
+
+  header
+    +padding(45px null null)
+    margin-bottom: 33px
+
+    h2
+      font-size: rem(50)
+
+  aside
+    +span-columns(5)
+
+    h3,
+    a,
+    p,
+    address
+      font-size: rem(21)
+      line-height: rem(35)
+
+    p
+      color: lighten($black-42, 30%)
+      margin-bottom: 70px
+
+    a
+      +display(block)
+      color: $black-42
+      margin-top: 40px
+
+    > p
+      font-size: rem(18)
+      line-height: rem(22)
+
+  form
+    +span-columns(6)
+    +shift(1)
+
+    +inputs
+    +send-button
+
+  .actions li
+    text-align: right
