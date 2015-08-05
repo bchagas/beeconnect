@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href='//fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css" />
+
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag  "application", "page-transition" %>
   </head>
@@ -58,6 +60,7 @@
         iShop.setPageTransition("main");
       });
     </script>
+    <%= javascript_include_tag "//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js" %>
     <%= yield_content :javascripts %>
   </body>
 </html>

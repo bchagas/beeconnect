@@ -21,34 +21,53 @@ title: iShop - Com o iShop você ganha para fazer compras
 </section>
 
 <section class="slider">
-  <ul>
-    <li>
-      <h3>DESCUBRA DESCONTOS ANTES DE IR ÀS COMPRAS</h3>
-      <h4>
-        Confira diariamente as últimas tendências e descontos exclusivos.
-        Assim você nunca perde uma chance de economizar
-      </h4>
-    </li>
+  <div class="content">
+    <ul>
+      <li>
+        <div class="info">
+          <span class="number">1</span>
+          <h3>DESCUBRA DESCONTOS ANTES DE IR ÀS COMPRAS</h3>
+          <h4>
+            Confira diariamente as últimas tendências e descontos exclusivos.
+            Assim você nunca perde uma chance de economizar
+          </h4>
+        </div>
+        <figure>
+          <%= image_tag_with_at2x("home/slide-1.png") %>
+        </figure>
+      </li>
 
-    <li>
-      <h3>SEJA LEMBRADO DOS DESCONTOS</h3>
-      <h4>
-        Assim que você entra em uma loja parceira,
-        o app te lembra dos melhores descontos de acordo com o seu perfil,
-        para que você não perca nenhuma promoção
-      </h4>
-    </li>
+      <li>
+        <div class="info">
+          <span class="number">2</span>
+          <h3>SEJA LEMBRADO DOS DESCONTOS</h3>
+          <h4>
+            Assim que você entra em uma loja parceira,
+            o app te lembra dos melhores descontos de acordo com o seu perfil,
+            para que você não perca nenhuma promoção
+          </h4>
+        </div>
+        <figure>
+          <%= image_tag_with_at2x("home/slide-2.png") %>
+        </figure>
+      </li>
 
-    <li>
-      <h3>SEJA LEMBRADO DOS DESCONTOS</h3>
-      <h4>
-        Assim que você entra em uma loja parceira,
-        o app te lembra dos melhores descontos de acordo com o seu perfil,
-        para que você não perca nenhuma promoção
-      </h4>
-    </li>
-
-  </ul>
+      <li>
+        <div class="info">
+          <span class="number">3</span>
+          <h3>SEJA LEMBRADO DOS DESCONTOS</h3>
+          <h4>
+            Assim que você entra em uma loja parceira,
+            o app te lembra dos melhores descontos de acordo com o seu perfil,
+            para que você não perca nenhuma promoção
+          </h4>
+        </div>
+        <figure>
+          <%= image_tag_with_at2x("home/slide-3.png") %>
+        </figure>
+      </li>
+    </ul>
+  </div>
 </section>
 
 <section class="highlight">
@@ -96,3 +115,18 @@ title: iShop - Com o iShop você ganha para fazer compras
     <%= link_to image_tag_with_at2x("icons/angle-right.png"), "" %>
   </div>
 </section>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "slider" %>
+
+  <script>
+    $(document).ready(function() {
+      var options = {
+        dots: true,
+        prevArrow: false
+      };
+
+      iShop.slider($(".slider ul"), options);
+    });
+  </script>
+<% end %>
