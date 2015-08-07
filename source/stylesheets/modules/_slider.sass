@@ -1,12 +1,58 @@
 .index
+  .slider
+    +padding(148px null null null)
+
   .slick-slide
+    outline: none
+
     .info
-      +span-columns(7)
+      +span-columns(8)
+      +margin(68px null null null)
 
     figure
       +span-columns(4)
-      +shift(1)
 
     img
       +size(100% 100%)
 
+    .number
+      background: $black-1
+      +display(block)
+      +size(141px 122px)
+
+      b
+        color: white
+        font:
+          family: Arial, sans-serif
+          size: rem(120)
+          weight: normal
+        line-height: rem(166)
+        +size(100% 100%)
+        +padding(null null null 25px)
+
+    h3
+      color: $purple-50
+      font-size: rem(32)
+      +margin(-24px null 21px null)
+      line-height: rem(38)
+
+    h3,
+    h4
+      +padding(null null null 45px)
+
+    h4
+      color: $black-2
+      font-weight: normal
+
+  .slick-next
+    +at2x("icons/angle-right", "png", 19%)
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-color: $purple-50
+    border: none
+    +hide-text
+    position: absolute
+    outline: none
+    top: 42px
+    right: -116px
+    +size(120px 476px)

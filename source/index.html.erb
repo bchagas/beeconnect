@@ -25,10 +25,11 @@ title: iShop - Com o iShop você ganha para fazer compras
     <ul>
       <li>
         <div class="info">
-          <span class="number">1</span>
+          <span class="number"><b>1</b></span>
           <h3>DESCUBRA DESCONTOS ANTES DE IR ÀS COMPRAS</h3>
           <h4>
             Confira diariamente as últimas tendências e descontos exclusivos.
+            <br>
             Assim você nunca perde uma chance de economizar
           </h4>
         </div>
@@ -39,7 +40,7 @@ title: iShop - Com o iShop você ganha para fazer compras
 
       <li>
         <div class="info">
-          <span class="number">2</span>
+          <span class="number"><b>2</b></span>
           <h3>SEJA LEMBRADO DOS DESCONTOS</h3>
           <h4>
             Assim que você entra em uma loja parceira,
@@ -54,7 +55,7 @@ title: iShop - Com o iShop você ganha para fazer compras
 
       <li>
         <div class="info">
-          <span class="number">3</span>
+          <span class="number"><b>3</b></span>
           <h3>SEJA LEMBRADO DOS DESCONTOS</h3>
           <h4>
             Assim que você entra em uma loja parceira,
@@ -123,7 +124,10 @@ title: iShop - Com o iShop você ganha para fazer compras
     $(document).ready(function() {
       var options = {
         dots: true,
-        prevArrow: false
+        speed: 500,
+        prevArrow: false,
+        fade: true,
+        cssEase: "linear"
       };
 
       iShop.slider($(".slider ul"), options);
