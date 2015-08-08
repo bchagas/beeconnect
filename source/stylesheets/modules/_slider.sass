@@ -1,6 +1,7 @@
 .index
   .slider
     +padding(148px null null null)
+    +margin(null null 124px null)
 
   .slick-slide
     outline: none
@@ -50,9 +51,70 @@
     background-position: 50% 50%
     background-color: $purple-50
     border: none
+    cursor: pointer
     +hide-text
     position: absolute
     outline: none
     top: 42px
     right: -116px
     +size(120px 476px)
+
+  .slick-dots
+    +at2x("slider/dots", "png", 351px)
+    background-repeat: no-repeat
+    background-position: center 10px
+    top: 382px
+    left: 70px
+    position: absolute
+    text-align: left
+
+    li
+      display: inline-block
+      +size(31px 74px)
+      text-align: center
+      +margin(null null null 185px)
+
+      &:first-child
+        +margin(null null null 0)
+
+      &#slick-slide00
+        +at2x("icons/house", "png", 31px)
+        background-repeat: no-repeat
+        background-position: center 42px
+
+        &.slick-active
+          +at2x("icons/house-selected", "png", 31px)
+
+      &#slick-slide01
+        +at2x("icons/boutique", "png", 31px)
+        background-repeat: no-repeat
+        background-position: center 42px
+
+        &.slick-active
+          +at2x("icons/boutique-selected", "png", 31px)
+
+      &#slick-slide02
+        +at2x("icons/bag", "png", 31px)
+        background-repeat: no-repeat
+        background-position: center 42px
+
+        &.slick-active
+          +at2x("icons/bag-selected", "png", 31px)
+
+      &.slick-active
+        button
+          background-color: $purple-50
+          color: white
+
+    button
+      background: $black-1
+      border: none
+      border-radius: 100px
+      color: lighten(#717171, 10%)
+      cursor: pointer
+      outline: none
+      +transition(all .2s ease-in-out)
+
+      &:hover
+        background-color: $purple-50
+        color: white
