@@ -6,8 +6,8 @@
  * http://blivesta.com/
  */
 
-.ishop,
-.ishop-overlay {
+.beeConnect,
+.beeConnect-overlay {
   position: relative;
   opacity: 0;
 
@@ -15,7 +15,7 @@
        -o-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-.ishop-loading {
+.beeConnect-loading {
   position: fixed;
   top: 0;
   z-index: 100;
@@ -27,7 +27,7 @@
        -o-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-.ishop-loading:after {
+.beeConnect-loading:after {
   position: fixed;
   top: 50%;
   width: 100%;
@@ -37,7 +37,7 @@
   text-align: center;
   content: "Loading";
 }
-.ishop-overlay-slide {
+.beeConnect-overlay-slide {
   position: fixed;
   z-index: 1;
   width: 100%;

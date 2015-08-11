@@ -1,4 +1,4 @@
-iShop.HelpCenter = {
+beeConnect.HelpCenter = {
   Views: {},
   Models: {},
   initialize: function(options) {
@@ -25,23 +25,23 @@ iShop.HelpCenter = {
       }
     });
 
-    var helpCenterModel = new iShop.HelpCenter.Models.HelpCenter(options);
+    var helpCenterModel = new beeConnect.HelpCenter.Models.HelpCenter(options);
 
-    new iShop.HelpCenter.Views.HelpCenterMenu({
+    new beeConnect.HelpCenter.Views.HelpCenterMenu({
       model: helpCenterModel,
       el: options.el
     }).render();
 
-    new iShop.HelpCenter.Views.HelpCenterSearch({
+    new beeConnect.HelpCenter.Views.HelpCenterSearch({
       indice: options.indice,
       el: options.search
     }).render();
 
-    new iShop.HelpCenter.Views.HelpCenterSearchResults({
+    new beeConnect.HelpCenter.Views.HelpCenterSearchResults({
       el: options.content
     }).render();
 
-    new iShop.HelpCenter.Views.HelpCenterContent({
+    new beeConnect.HelpCenter.Views.HelpCenterContent({
       el: options.content
     }).render();
 

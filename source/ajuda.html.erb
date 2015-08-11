@@ -1,5 +1,5 @@
 ---
-title: iShop - Precisando de ajuda?
+title: beeConnect - Precisando de ajuda?
 ---
 
 <section class="header">
@@ -12,8 +12,8 @@ title: iShop - Precisando de ajuda?
   <div class="content">
     <h2>Principais dúvidas</h2>
     <ul>
-      <li><%= link_to "O que é iShop?", ""%></li>
-      <li><%= link_to "Como usar o aplicativo iShop?", ""%></li>
+      <li><%= link_to "O que é beeConnect?", ""%></li>
+      <li><%= link_to "Como usar o aplicativo beeConnect?", ""%></li>
       <li><%= link_to "Porque minha conta sumiu?", ""%></li>
       <li><%= link_to "Onde posso encontrar as promoções?", ""%></li>
     </ul>
@@ -33,7 +33,7 @@ title: iShop - Precisando de ajuda?
 
   <script>
     var options = <%= data.faq.questions.to_json.html_safe %>;
-    iShop.HelpCenter.initialize({
+    beeConnect.HelpCenter.initialize({
       menu: options,
       el: $(".all-questions nav"),
       content: $(".answer"),

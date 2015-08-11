@@ -1,4 +1,4 @@
-iShop.HelpCenter.Views.HelpCenterContent = Backbone.View.extend({
+beeConnect.HelpCenter.Views.HelpCenterContent = Backbone.View.extend({
   template: HandlebarsTemplates["help_center/content"],
 
   initialize: function(options) {

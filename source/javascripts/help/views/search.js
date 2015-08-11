@@ -1,4 +1,4 @@
-iShop.HelpCenter.Views.HelpCenterSearch = Backbone.View.extend({
+beeConnect.HelpCenter.Views.HelpCenterSearch = Backbone.View.extend({
   template: HandlebarsTemplates["help_center/search"],
 
   events: {

@@ -15,13 +15,13 @@
         outClass: "fade-out",
         inDuration: 1500,
         outDuration: 800,
-        linkElement: ".ishop-link",
+        linkElement: ".beeconnect-link",
         loading: true,
         loadingParentElement: "body",
-        loadingClass: "ishop-loading",
+        loadingClass: "beeconnect-loading",
         unSupportCss: [ "animation-duration", "-webkit-animation-duration", "-o-animation-duration" ],
         overlay: false,
-        overlayClass: "ishop-overlay-slide",
+        overlayClass: "beeconnect-overlay-slide",
         overlayParentElement: "body"
       }, options);
       var support = methods.supportCheck.call(this, options);

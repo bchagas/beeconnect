@@ -1,4 +1,4 @@
-iShop.setPageTransition = function(el) {
+beeConnect.setPageTransition = function(el) {
   options = {
     inClass               :   'fade-in-up-sm',
     outClass              :   'fade-out-up-sm',

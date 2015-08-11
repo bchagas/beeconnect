@@ -1,4 +1,4 @@
-iShop.HelpCenter.Views.HelpCenterMenu = Backbone.View.extend({
+beeConnect.HelpCenter.Views.HelpCenterMenu = Backbone.View.extend({
   template: HandlebarsTemplates["help_center/navigation"],
 
   events: {
