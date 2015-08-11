@@ -1,11 +1,27 @@
+.number
+  background: $black-1
+  +display(block)
+  +size(141px 122px)
+
+  b
+    color: white
+    font:
+      family: Arial, sans-serif
+      size: rem(120)
+      weight: normal
+    line-height: rem(166)
+    +size(100% 100%)
+    +padding(null null null 25px)
+
+.slick-slide
+  outline: none
+
 .index
   .slider
     +padding(148px null null null)
     +margin(null null 124px null)
 
   .slick-slide
-    outline: none
-
     .info
       +span-columns(8)
       +margin(68px null null null)
@@ -15,21 +31,6 @@
 
     img
       +size(100% 100%)
-
-    .number
-      background: $black-1
-      +display(block)
-      +size(141px 122px)
-
-      b
-        color: white
-        font:
-          family: Arial, sans-serif
-          size: rem(120)
-          weight: normal
-        line-height: rem(166)
-        +size(100% 100%)
-        +padding(null null null 25px)
 
     h3
       color: $purple-50
@@ -118,3 +119,95 @@
       &:hover
         background-color: $purple-50
         color: white
+
+.parceiros
+  .slider
+    height: 830px
+
+    .slick-slider
+      height: 100%
+
+    .content,
+    .slider-image,
+    .slider-info
+      height: 100%
+
+    .slider-images,
+    .slider-info
+      +padding(125px null 140px)
+
+    .slider-images
+      +span-columns(8)
+      +margin(null 0 null null)
+      +size(42.42553%  auto)
+
+    .slider-info
+      +span-columns(7)
+
+    .slider-images
+      figure
+        width: 100%
+
+    .slider-info
+      background-color: $yellow-50
+      height: 100%
+      +padding(null 30px)
+
+    .slick-slide
+      float: left
+      height: 100%
+
+    .number,
+    h3
+      float: left
+
+    .number
+      background-color: rgba(#FFFFFF, .2)
+      +size(112px 107px)
+
+      b
+        color: $yellow-50
+        font-size: rem(100)
+        +padding(null null null 40px)
+
+    h3
+      color: white
+      font-size: rem(35)
+      line-height: rem(39)
+      +margin(42px null null 22px)
+
+    p
+      color: white
+      clear: both
+      font-size: rem(25)
+      line-height: rem(35)
+      +padding(56px null null null)
+
+    .slick-slide img
+      +transition(all .2s ease-in-out)
+      +size(85% 90%)
+      margin: 38px auto 0
+      opacity: .2
+
+    .slick-center img
+      +transition(all .2s ease-in-out)
+      +size(100% 100%)
+      margin-top: 0
+      opacity: 10
+
+    .slick-prev,
+    .slick-next
+      background: transparent
+      bottom: 0
+      border: none
+      color: white
+      cursor: pointer
+      font-size: rem(22)
+      outline: none
+      position: absolute
+
+    .slick-next
+      right: 0
+
+    .slick-disabled
+      opacity: .5

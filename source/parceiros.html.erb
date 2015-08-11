@@ -43,7 +43,53 @@ title: iShop - Parceiros iShop
 </blockquote>
 
 <section class="slider">
+  <div class="content">
+    <div class="slider-images">
+      <ul>
+        <% %w(1 2 3 4 5).each do |slide| %>
+          <li>
+            <figure>
+              <%= image_tag_with_at2x("partner/slide-#{slide}.png") %>
+            </figure>
+          </li>
+        <% end %>
+      </ul>
+    </div>
 
+    <div class="slider-info">
+      <ul>
+        <li>
+          <span class="number"><b>1</b></span>
+          <h3>Em casa</h3>
+          <p>Ajuda a construir a intenção de compra com conteúdo personalizado e direcionado</p>
+        </li>
+
+        <li>
+          <span class="number"><b>2</b></span>
+          <h3>Perto da loja</h3>
+          <p>Traz o cliente para dentro da loja com o envio de mensagens push quando ele está próximo</p>
+        </li>
+
+        <li>
+          <span class="number"><b>3</b></span>
+          <h3>Entrada da loja</h3>
+          <p>Recepciona os clientes logo que entram na loja com descontos específicos para cada perfil</p>
+        </li>
+
+        <li>
+          <span class="number"><b>4</b></span>
+          <h3>Dentro da loja</h3>
+          <p>Guia o comprador pela loja com ofertas em departamentos específicos, ao mesmo tempo que alimenta o vendedor com informações sobre esse consumidor</p>
+        </li>
+
+        <li>
+          <span class="number"><b>5</b></span>
+          <h3>Nas prateleiras</h3>
+          <p>Aumenta a taxa de conversão e o ticket médio, uma vez que leva o consumidor diretamente ao produto</p>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 <blockquote>
@@ -66,3 +112,40 @@ title: iShop - Parceiros iShop
     </ul>
   </div>
 </section>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "slider" %>
+
+  <script>
+    var nextButton = "<button type='button' class='slick-next'>Próximo " +
+                     '<%= image_tag_with_at2x("icons/next-arrow.png") %>' +
+                     "</button>"
+
+    var prevButton = "<button type='button' class='slick-prev'>" +
+                     '<%= image_tag_with_at2x("icons/prev-arrow.png") %> ' +
+                     "Anterior</button>"
+
+    var slideImagesOptions = {
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        arrows: false,
+        asNavFor: ".slider-info ul",
+        infinite: false
+      };
+
+      var slideInfoOptions = {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: ".slider-images ul",
+        infinite: false,
+        nextArrow: nextButton,
+        prevArrow: prevButton
+    };
+
+    $(document).ready(function() {
+      iShop.slider($(".slider-info ul"), slideInfoOptions);
+      iShop.slider($(".slider-images ul"), slideImagesOptions);
+    });
+  </script>
+<% end %>
