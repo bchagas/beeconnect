@@ -1,22 +1,51 @@
 {
   "questions": [
     {
-      "title" : "Principais perguntas"
+      "title" : "Principais perguntas",
+      "questions" : [
+        { "title" : "O que é o beeConnect" },
+        { "title" : "Como usar o aplicativo beeConnect" },
+        { "title" : "Onde posso encontrar as promoções?" }
+      ]
     },
     {
       "title" : "Minha Conta",
       "questions" : [
         { "title" : "Como posso re-acessar minha conta se eu for desconectado?" },
-        { "title" : "O que devo fazer se eu esquecer minhas informacoes de loging?" },
-        { "title" : "Eu preciso me registrar para utilizar o iShop?" },
+        { "title" : "O que devo fazer se eu esquecer minhas informações de login?" },
+        { "title" : "Eu preciso me registrar para utilizar o beeConnect?" },
         { "title" : "Por que quando tento me registrar, eu recebo a mensagem que o meu email já está sendo utilizado?" }
       ]
     },
-    { "title" : "Amigos Convite" },
-    { "title" : "Cupons" },
-    { "title" : "Problemas técnicos" },
-    { "title" : "Configurações" },
-    { "title" : "Ativando o serviço de localização" },
+    {
+      "title" : "Cupons",
+      "questions" : [
+        { "title" : "Como devo utilizar o cupom que recebi?" },
+        { "title" : "O que devo fazer para habilitar um cupom?" },
+        { "title" : "O que devo fazer se eu chegar perto do produto e meu cupom não for habilitado?" },
+        { "title" : "O que devo fazer se eu não encontrar o produto para conseguir habilitar meu cupom?" }
+      ]
+    },
+    {
+      "title" : "Problemas técnicos",
+      "questions" : [
+        { "title" : "O que devo fazer se ocorrerem problemas técnicos e meu celular apresentar erros ao utilizar o beeConnect?" }
+      ]
+    },
+    {
+      "title" : "Configurações",
+      "questions" : [
+        { "title" : "Como habilitar o serviço de localização para o beeConnect?" },
+        { "title" : "E se o aplicativo ainda assim não me localizar?" },
+        { "title" : "Como posso controlar as configurações de notificações?" }
+      ]
+    },
+    {
+      "title" : "Ativando o serviço de localização",
+      "questions" : [
+       { "title" : "Como habilitar o serviço de localização para o beeConnect?" }
+      ]
+    },
     { "title" : "Ativando o bluetooth" }
   ]
 }

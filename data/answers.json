@@ -1,16 +1,69 @@
 {
   "answers": [
     {
+      "title" : "O que é o beeConnect?",
+      "content" : "<p>O aplicativo beeConnect é o seu melhor companheiro na hora de fazer compras. Com ele você descobre os produtos e descontos incríveis nos seus lugares favoritos. No app você pode ver produtos na vitrine virtual e ganhar cupons de desconto exclusivos assim que entrar na loja.</p>"
+    },
+    {
+      "title" : "Como usar o aplicativo beeConnect?",
+      "content": "<p>Após baixar o beeConnect e efetuar o seu login você terá acesso a todo conteúdo do app.</p><ol><li><b>Descubra descontos antes de ir às compras</b>Navegue pela vitrine virtual e veja as últimas tendências e descontos diários para que você nunca perca uma chance de economizar</li><li><b>Seja lembrado dos descontos ao entrar na loja</b>Assim que você entra na loja o app te lembra dos melhores descontos com o seu perfil, para que você não perca nenhuma promoção!</li><li><b>Ganhe descontos exclusivos em produtos na loja</b>Para gerar o cupom de desconto basta se aproximar fisicamente do produto que foi anunciado na vitrine virtual e clicar no botão “cupom”. Depois é só apresentar o cupom no caixa para ganhar o desconto.</li></ol>"
+    },
+    {
+      "title" : "Onde posso encontrar as promoções?",
+      "content" : "<p>Nós estamos trabalhando para que seja cada vez mais fácil encontrar produtos e ofertas próximas a você.</p><p>Para encontrar os estabelecimentos e lojas participantes, basta entrar no menu inicial e clicar no botão “Parceiros” Assim, você poderá visualizar os produtos disponíveis em cada loja, assim como sua localização.</p>"
+    },
+    {
+      "title" : "O que devo fazer se eu esquecer minhas informações de login?",
+      "content" : "<p>Se você se esqueceu do seu email de login, primeiramente tente utilizar a opção de logar com Facebook.</p><p>Caso essa opção não funcione, entre em contato com nossa equipe de atendimento ao cliente, que estará a postos para te auxiliar. Caso tenha esquecido apenas a sua senha, clique na opção “esqueci minha senha” que enviaremos uma nova senha para o seu email cadastrado.</p>"
+    },
+    {
       "title" : "Como posso re-acessar minha conta se eu for desconectado?",
       "content" : "<p>Se você recebeu a mensagem de que seu email /  número de telefone já está sendo utilizado, há chances de você já ter criado uma conta anteriormente. Para testar essa possibilidade:</p><ol><li>Pressione a opção (...)</li><li>Na página que aparecer, você verá as opções “Registre-se” ou “Entre”</li><li>Se você possui uma conta no Facebook, tente primeiramente esta opção (que é a mais ráṕida); Caso contrário, pressione a opção “entrar manualmente”, e tente então entrar utilizando seu email e uma senha.</li></ol><p>Caso você continue com problemas, entre em contato com nossa equipe de atendimento ao cliente, que estará a postos para te auxiliar.</p>"
     },
-    { "title" : "Minha Conta" },
-    { "title" : "Amigos Convite" },
-    { "title" : "Cupons" },
-    { "title" : "Problemas técnicos" },
-    { "title" : "Configurações" },
-    { "title" : "Ativando o serviço de localização" },
-    { "title" : "Ativando o bluetooth" }
+    {
+      "title" : "Eu preciso me registrar para utilizar o beeConnect?",
+      "content" : "<p>Você pode navegar no beeConnect sem fazer o login. Para gerar os cupons de desconto, no entanto, você deve se registrar no aplicativo. Isso pode ser realizado através do Facebook, ou manualmente.</p>"
+    },
+    {
+      "title" : "Por que quando tento me registrar, eu recebo a mensagem que o meu email já está sendo utilizado?",
+      "content" : "<p>Se você recebeu a mensagem de que seu email já está sendo utilizado, há a possibilidade de você já ter criado uma conta anteriormente. Para testar essa possibilidade: <ol><li>Abra o app</li><li>Na página inicial, você verá as opções “Registre-se” ou “Entre”</li><li>Se você possui uma conta no Facebook, tente primeiro esta opção (que é a mais rápida e simples); Caso contrário, pressione a opção “entrar manualmente”, e tente então entrar utilizando seu email e uma senha. Se não souber a senha dessa conta, clique na opção “esqueci minha senha” que enviaremos uma nova senha para o seu email cadastrado.</li></ol><p>Caso você continue com problemas, entre em contato com nossa equipe de atendimento ao cliente, que estará a postos para te auxiliar.</p>"
+    },
+    {
+      "title" : "Como devo utilizar o cupom que recebi?",
+      "content" : "<p>Para utilizar o cupom gerado, apresente-o no momento da compra ao caixa do estabelecimento e receba o desconto.</p>"
+    },
+    {
+      "title" : "O que devo fazer para habilitar um cupom?",
+      "content" : "<p>Se o botão de gerar cupom não está habilitado no seu celular, acione seu bluetooth e vá até o produto dentro da loja. Com isso, o botão “cupom” será  habilitado automaticamente e você terá apenas que clicar nele para gerar o cupom.</p>"
+    },
+    {
+      "title" : "O que devo fazer se eu chegar perto do produto e meu cupom não for habilitado?",
+      "content" : "<p>Primeiro, verifique se a loja em que você se encontra é parceira do beeConnect. Para isso, acesse a opção “Parceiros” do menu principal do aplicativo onde você encontrará a lista das localidades participantes.Caso o local onde você se encontra realmente for um parceiro do beeConnect, verifique se o seu bluetooth está acionado. Caso não esteja, acione-o.</p><p><b>No seu Android:</b></p><ol><li>Pressione o botão de menu principal do seu celular, e então no botão de “Configurar”</li><li>Ative a opção Bluetooth</li></ol><p><b>No seu iPhone:</b></p><ol><li>Vá às configurações de seu celular (através do ícone de uma engrenagem cinza)</li><li?Ative a opção Bluetooth</li><p>Caso ele esteja acionado, tente desligá-lo e ligá-lo novamente.Caso o problema persista, verifique na loja da sua plataforma se a versão de seu aplicativo beeConnect está atualizada.Se ainda assim o cupom não for habilitado, entre em contato com nossa equipe de atendimento ao cliente, que estará a postos para te auxiliar.</p>"
+    },
+    {
+      "title" : "O que devo fazer se eu não encontrar o produto para conseguir habilitar meu cupom?",
+      "content" : "Primeiro, verifique se a loja em que você se encontra é parceira do beeConnect. Para isso, acesse a opção “Parceiros” do menu principal do aplicativo onde você encontrará a lista das localidades participantes. Caso o local onde você se encontra realmente for um parceiro do beeConnect, entre em contato com um funcionário do estabelecimento e pergunte sobre a localização do produto. É possível que o produto esteja indisponível por tempo indeterminado.</p>"
+    },
+    {
+      "title" : "O que devo fazer se ocorrerem problemas técnicos e meu celular apresentar erros ao utilizar o beeConnect?",
+      "content" : "<p>Na maioria dos casos, se você presenciar problemas com o funcionamento do beeConnect, tente ir na loja da sua plataforma e verifique se existe alguma atualização disponível.</p><p>Caso isso não resolva, reinstale o app deletando o aplicativo de seu celular. Após a reinstalação, basta acessar sua conta através do Facebook ou manualmente com seu login e senha.</p><p>Caso você continue com problemas, entre em contato com nossa equipe de atendimento ao cliente, que estará a postos para te auxiliar.</p>"
+    },
+    {
+      "title" : "Como habilitar o serviço de localização para o beeConnect?",
+      "content" : "<p>Se o aplicativo não consegue encontrar sua localização, verifique se o serviço de localização do seu celular está habilitado nas configurações de seu celular.</p><h3>Ativando o serviço de localização</h3><p><b>No seu Android:</b></p><ol><li>Pressione o botão de menu principal do seu celular, e então no botão de “Configurar”</li><li>Pressione o botão de “Localização” ou “Localização e Segurança”</li><li>Ative o modo de localização via GPS e via internet wireless de seu celular.</li></ol><p><b>No seu iPhone:</b></p><ol><li>Vá às configurações de seu celular (clicando no ícone correspondente a uma engrenagem cinza)</li><li>Pressione a opção Privacidade</li><li>Acione a opção “Serviços de Localização”</li></ol><p>Para que cupons sejam gerados e o beeConnect funcione adequadamente, o bluetooth de seu celular também deve estar habilitado.</p><h3>Ativando o Bluetooth</h3><p><b>No seu Android:</b></p><ol><li>Pressione o botão de menu principal do seu celular, e então no botão de “Configurar”</li><li>Ative a opção Bluetooth</li><p><b>No seu iPhone:</b></p><ol><li>Vá às configurações de seu celular(clicando no ícone correspondente a uma engrenagem cinza)</li><li>Ative a opção Bluetooth</li></ol>"
+    },
+    {
+      "title" : "E se o aplicativo ainda assim não me localizar?",
+      "content" : "<p>Se o beeConnect não consegue te localizar, e as configurações de localização e bluetooth de seu celular estão ativadas, tente atualizar o aplicativo para obter sua versão mais recente.</p><p>Caso isso não funcione, entre em contato com nossa equipe de atendimento ao cliente, que estará a postos para te auxiliar.</p>"
+    },
+    {
+      "title" : "Por que o aplicativo está constantemente me localizando mesmo quando está desligado?",
+      "content" : "<p>O beeConnect utilizará o serviço de localização para te lembrar dos melhores descontos nas lojas das quais você está próximo.</p><p>Utilizamos principalmente torre de antena de celular e wifi (não estamos usando de fato o seu GPS o tempo todo) o que praticamente não gasta bateria.</p><p>No entanto,se você quiser desabilitar essa função, basta ir às configurações do seu celular e desativar o serviço de localização do app beeConnect.</p>"
+    },
+    {
+      "title" : "Como posso controlar as configurações de notificações?",
+      "content" : "<p><b>No seu Android:</b></p><ol><li>Pressione o botão de menu principal do seu celular, e então no botão de “Configurar”</li><li>Pressione o botão de</li></ol><p><b>No seu iPhone:</p></p><ol><li>Vá às configurações de seu celular (clicando no ícone correspondente a uma engrenagem cinza)</li><li>Pressione a opção “Notificações”</li><li>Localize o app beeConnect e clique nele</li></ol>"
+    }
   ]
 }
 

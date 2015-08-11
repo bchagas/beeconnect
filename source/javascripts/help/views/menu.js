@@ -13,6 +13,7 @@ iShop.HelpCenter.Views.HelpCenterMenu = Backbone.View.extend({
 
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
+    this.$(".topics").slideUp();
   },
 
   getResultTopic: function(url) {
@@ -52,6 +53,7 @@ iShop.HelpCenter.Views.HelpCenterMenu = Backbone.View.extend({
 
   showTopics: function(event) {
     event.preventDefault();
+    this.$(".topics").slideUp();
 
     var el = $(event.target),
         topics = el.parents("li").find("ul");
