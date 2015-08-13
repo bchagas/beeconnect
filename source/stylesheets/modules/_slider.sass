@@ -23,20 +23,20 @@
 
   .slick-slide
     .info
-      +span-columns(8)
+      +span-columns(10)
       +margin(68px null null null)
 
     figure
-      +span-columns(4)
+      +span-columns(5)
 
     img
       +size(100% 100%)
 
     h3
       color: $purple-50
-      font-size: rem(32)
+      font-size: rem(50)
       +margin(-24px null 21px null)
-      line-height: rem(38)
+      line-height: rem(54)
 
     h3,
     h4
@@ -57,8 +57,8 @@
     position: absolute
     outline: none
     top: 42px
-    right: -116px
-    +size(120px 476px)
+    right: -40px
+    +size(120px 86%)
 
   .slick-dots
     +at2x("slider/dots", "png", 351px)
@@ -132,14 +132,13 @@
     .slider-info
       height: 100%
 
-    .slider-images,
     .slider-info
       +padding(125px null 140px)
 
     .slider-images
-      +span-columns(8)
-      +margin(null 0 null null)
-      +size(42.42553%  auto)
+      width: flex-grid(9) + flex-gutter()
+      float: left
+      overflow: hidden
 
     .slider-info
       +span-columns(7)
@@ -152,10 +151,6 @@
       background-color: $yellow-50
       height: 100%
       +padding(null 30px)
-
-    .slick-slide
-      float: left
-      height: 100%
 
     .number,
     h3
@@ -185,14 +180,13 @@
 
     .slick-slide img
       +transition(all .2s ease-in-out)
-      +size(85% 90%)
-      margin: 38px auto 0
+      +size(333px 585px)
+      margin: 55px auto 0
       opacity: .2
 
     .slick-center img
       +transition(all .2s ease-in-out)
-      +size(100% 100%)
-      margin-top: 0
+      +size(433px 760px)
       opacity: 10
 
     .slick-prev,

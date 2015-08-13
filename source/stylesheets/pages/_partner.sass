@@ -1,10 +1,16 @@
 .parceiros
-  .description,
+  section.header
+    margin-bottom: 15px
+
+  .description
+    +span-columns(8)
+
   .partner-form
+    +shift(2)
     +span-columns(6)
 
   .description
-    padding-top: 70px
+    +padding(70px 88px null null)
 
     p
       font-size: rem(35)
@@ -29,10 +35,12 @@
       text-align: center
 
   .advantages
+    +padding(36px null null)
+
     li
       color: $black-50
       font-size: rem(17)
-      +span-columns(3)
+      +span-columns(4)
       +margin(null null 115px null)
       +padding(null 20px)
       text-align: center
