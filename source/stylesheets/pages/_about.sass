@@ -5,15 +5,25 @@
     line-height: rem(60)
     +padding(126px 20px null null)
 
+    +media($desktop)
+      +span-columns(6 of 12)
+      +padding(92px null null null)
+
   figure
     +span-columns(7)
     height: 502px
+
+    +media($desktop)
+      +span-columns(6 of 12)
 
   .about
     +at2x("about/highlight", "jpg", 100%)
     background-repeat: none
     background-position: center center
     height: 640px
+
+    +media($desktop)
+      height: 600px
 
     p
       background-color: white
@@ -24,6 +34,11 @@
       margin: 97px 0
       +padding(72px 61px)
       width: 60%
+
+      +media($desktop)
+        +padding(62px 41px)
+        font-size: rem(14)
+        line-height: rem(40)
 
     a
       color: $blue-50
