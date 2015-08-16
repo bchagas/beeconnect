@@ -12,6 +12,9 @@
   .top-questions
     padding-top: 66px
 
+    +media($desktop)
+      +margin(null 3%)
+
     > .content
       background-color: $blue-2
       border-radius: 10px
@@ -123,3 +126,7 @@
     button[type="submit"]
       +span-columns(3 of 10)
       +padding(14px)
+
+  +media($desktop)
+    section.header
+      min-height: 445px
