@@ -9,6 +9,15 @@
       +span-columns(6 of 12)
       +padding(92px null null null)
 
+    +media($tablet)
+      +fill-parent
+      +padding(0)
+      +margin(0)
+      font-size: rem(21)
+      line-height: rem(35)
+      text-align: center
+      float: none
+
   figure
     +span-columns(7)
     height: 502px
@@ -16,14 +25,27 @@
     +media($desktop)
       +span-columns(6 of 12)
 
+    +media($tablet)
+      +fill-parent
+      +padding(0)
+      +margin(33px 0 0)
+      height: auto
+      text-align: center
+
+      img
+        +size(390px 410px)
+
   .about
     +at2x("about/highlight", "jpg", 100%)
-    background-repeat: none
+    background-repeat: no-repeat
     background-position: center center
     height: 640px
 
     +media($desktop)
       height: 600px
+
+    +media($tablet)
+      height: 480px
 
     p
       background-color: white
@@ -39,6 +61,12 @@
         +padding(62px 41px)
         font-size: rem(14)
         line-height: rem(40)
+
+      +media($tablet)
+        +padding(30px 40px)
+        +margin(60px null)
+        width: 90%
+
 
     a
       color: $blue-50

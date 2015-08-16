@@ -22,12 +22,15 @@ $folder: null
     background-position: center top
 
     +media($tablet)
-      background-size: auto 673px
+      background-size: auto 743px
 
 section.header
   color: white
   min-height: 570px
   +padding(68px null null null)
+
+  +media($tablet)
+    min-height: 616px
 
   & + section
     background: white
@@ -47,11 +50,10 @@ blockquote
 
       +media($tablet)
         +span-columns(4 of 8)
-        +margin(null 0 null null)
         height: auto
 
         img
-          +size(86.6% 79%)
+          +size(99.3% 79%)
 
     header,
     .download-app
