@@ -7,6 +7,12 @@ body
     .logo
       @extend %default-logo
 
+      +media($tablet)
+        +span-columns(8 of 8)
+
+        img
+          +size(219px 53px)
+
     a
       color: $black-30
       @extend %link-size
@@ -17,6 +23,12 @@ body
       +justify-content(space-between)
       +padding(8px 29px null)
 
+      +media($tablet)
+        +span-columns(4 of 8)
+        +display(flex)
+        +justify-content(space-between)
+        +padding(null 0)
+
     .social
       +span-columns(3)
       +shift(2)
@@ -25,6 +37,13 @@ body
       margin-right: 0
       +padding(null 0)
       text-align: right
+
+      +media($tablet)
+        +span-columns(2 of 8)
+        +shift(2 of 8)
+        +display(flex)
+        +margin(null 0 null null)
+        +justify-content(space-between)
 
     .app-rules,
     .copyright
