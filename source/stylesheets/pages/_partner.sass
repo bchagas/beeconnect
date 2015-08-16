@@ -5,18 +5,32 @@
   .description
     +span-columns(8)
 
+    +media($desktop)
+      +span-columns(6 of 12)
+
   .partner-form
     +shift(2)
     +span-columns(6)
 
+    +media($desktop)
+      +span-columns(6 of 12)
+      +shift(0)
+
   .description
     +padding(70px 88px null null)
+
+    +media($desktop)
+      +padding(null 0 null null)
 
     p
       font-size: rem(35)
       line-height: rem(48)
       letter-spacing: -1px
       margin-bottom: 48px
+
+      +media($desktop)
+        font-size: rem(28)
+        letter-spacing: normal
 
     a
       +button(rgba(255, 255, 255, .1))
@@ -51,3 +65,7 @@
     figure
       +size(auto 91px)
       margin-bottom: 20px
+
+  +media($desktop)
+    .slider .content
+      padding: 0
