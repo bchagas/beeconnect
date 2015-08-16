@@ -1,11 +1,53 @@
 +media($desktop)
+  .content
+    padding: 0 3%
+
+  body
+    > header,
+    > footer
+      .logo
+        +span-columns(3 of 12)
+
+    > header nav
+      +shift(2 of 12)
+      +span-columns(7 of 12)
+
+    > footer .social
+      +shift(1)
+
   .index section.header
     figure
       +span-columns(5 of 12)
+      > img
+        +size(96.223% auto)
 
-    img
-      +size(100% auto)
-
-    header
+    header,
+    .download-app
       +span-columns(7 of 12)
       +padding(null null null 0)
+      +margin(null 0 null null)
+
+    header
+      +padding(72px null null null)
+      text-align: left
+
+    ul
+      text-align: left
+
+  .index
+    .slick-slide h3
+      font-size: rem(35)
+      line-height: rem(39)
+
+    .slick-next
+      width: 89px
+      right: -29px
+
+  .highlight figcaption
+    +padding(11.8% 43px 7%)
+
+  .apps li
+    +span-columns(6 of 12)
+
+  .partner
+    height: 324px

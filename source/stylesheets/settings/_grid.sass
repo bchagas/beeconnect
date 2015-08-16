@@ -1,8 +1,19 @@
+@import neat-helpers
+
 // Grid settings
 $column: 60px
 $gutter: 20px
-$grid-columns: 16 !default
-$max-width: em(1280) !default
+$grid-columns: 16
+$max-width: 1280px
+
+$border-box-sizing: true !default
+$default-layout-direction: LTR
+$default-feature: min-width !default
+
+//Display visual grids
+//$visual-grid-color: red
+//$visual-grid-index: front
+//$visual-grid: true
 
 $mobile-size: em(320)
 $tablet-size: em(720)
@@ -10,13 +21,4 @@ $desktop-size: em(960)
 
 $mobile: new-breakpoint(max-width $mobile-size 4)
 $tablet: new-breakpoint(max-width $tablet-size 8)
-$desktop: new-breakpoint(max-width $desktop-size 12)
-
-$border-box-sizing: true !default
-$default-layout-direction: LTR
-$default-feature: min-width !default
-
-//Display visual grids
-// $visual-grid-color: red
-// $visual-grid-index: front
-// $visual-grid: true
+$desktop: new-breakpoint(min-width $desktop-size max-width 1279px 12)
