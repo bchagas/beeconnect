@@ -21,6 +21,9 @@ $folder: null
     background-repeat: no-repeat
     background-position: center top
 
+    +media($tablet)
+      background-size: auto 673px
+
 section.header
   color: white
   min-height: 570px
@@ -42,26 +45,70 @@ blockquote
       +span-columns(5)
       height: 598px
 
+      +media($tablet)
+        +span-columns(4 of 8)
+        +margin(null 0 null null)
+        height: auto
+
+        img
+          +size(86.6% 79%)
+
     header,
     .download-app
       +span-columns(11)
       padding-left: rem(35)
       margin-right: 0
 
+      +media($desktop)
+        +span-columns(7 of 12)
+        +padding(null null null 0)
+        +margin(null 0 null null)
+
+      +media($tablet)
+        +span-columns(4 of 8)
+        +padding(null null null 0)
+        +margin(null 0 null null)
+
       &:last-child
         margin-left: 0
 
+    +media($tablet)
+      .download-app
+        img
+          +size(49% 49%)
+
     header
-      padding-top: 145px
-      margin-bottom: 50px
+      +padding(145px null null null)
+      +margin(null null 50px null)
       text-align: center
+
+      +media($desktop)
+        +padding(72px null null null)
+        text-align: left
+
+        ul
+          text-align: left
+
+      +media($tablet)
+        +padding(88px null null null)
 
     h1
       @extend %h1-font-size
-      margin-bottom: 17px
+      +margin(null null 17px)
+
+      +media($tablet)
+        font:
+          size: rem(26)
+          weight: normal
+        line-height: rem(36)
+        text-align: left
+        +margin(null null 24px)
 
     h2
       @extend %subtitle
+
+      +media($tablet)
+        text-align: left
 
     ul
       overflow: hidden

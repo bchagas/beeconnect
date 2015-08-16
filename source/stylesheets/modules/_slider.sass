@@ -18,16 +18,38 @@
 
 .index
   .slider
-    +padding(148px null null null)
+    +padding(148px null null)
     +margin(null null 124px null)
+
+    +media($tablet)
+      +padding(86px null null)
+
+  +media($tablet)
+    .number
+      +hide-on-mobile
 
   .slick-slide
     .info
       +span-columns(10)
       +margin(68px null null null)
 
+      +media($tablet)
+        +outer-container
+        +margin(0 null null)
+        +padding(null null 68px)
+        float: none
+        width: auto
+
     figure
       +span-columns(5)
+
+      +media($tablet)
+        +span-columns(4 of 8)
+        float: none
+        +margin(0 auto)
+
+        &:last-child
+          +margin(null auto null null)
 
     img
       +size(100% 100%)
@@ -38,9 +60,17 @@
       +margin(-24px null 21px null)
       line-height: rem(54)
 
+      +media($tablet)
+        font-size: rem(25)
+        line-height: 35px
+        +margin(0 null null null)
+
     h3,
     h4
       +padding(null null null 45px)
+
+      +media($tablet)
+        text-align: center
 
     h4
       color: $black-2
@@ -60,6 +90,12 @@
     right: -40px
     +size(120px 86%)
 
+    +media($tablet)
+      background-size: 10% auto
+      top: 235px
+      right: -23px
+      +size(29.5% 60%)
+
   .slick-dots
     +at2x("slider/dots", "png", 351px)
     background-repeat: no-repeat
@@ -69,11 +105,27 @@
     position: absolute
     text-align: left
 
+    +media($tablet)
+      +span-columns(3 of 8)
+      float: none
+      +margin(34px auto null)
+      background: none
+      position: relative
+      top: auto
+      left: auto
+
+      &:last-child
+        margin-right: auto
+
     li
       display: inline-block
       +size(31px 74px)
       text-align: center
       +margin(null null null 185px)
+
+      +media($tablet)
+        +margin(null null null 51px)
+        height: auto
 
       &:first-child
         +margin(null null null 0)
@@ -102,6 +154,15 @@
         &.slick-active
           +at2x("icons/bag-selected", "png", 31px)
 
+      +media($tablet)
+        &#slick-slide00,
+        &#slick-slide01,
+        &#slick-slide02
+          background: none
+
+          &.slick-active
+            background: none
+
       &.slick-active
         button
           background-color: $purple-50
@@ -115,6 +176,10 @@
       cursor: pointer
       outline: none
       +transition(all .2s ease-in-out)
+
+      +media($tablet)
+        text-indent: -9999px
+        +size(9px 12px)
 
       &:hover
         background-color: $purple-50

@@ -7,20 +7,38 @@
   height: 346px
   +padding(93px null null)
 
+  +media($tablet)
+    height: 258px
+    +padding(60px null null)
+
   header
     +span-columns(10)
+
+    +media($tablet)
+      +span-columns(6 of 8)
 
   a
     +span-columns(1)
     +shift(5)
     +padding(40px null null)
 
+    +media($tablet)
+      +span-columns(1 of 8)
+      +shift(1 of 8)
+
   h1
     @extend %h1-font-size
-    margin-bottom: 17px
+    +margin(null null 17px)
+
+    +media($tablet)
+      font-size: rem(40)
+      +margin(null null 10px)
 
   p
     @extend %subtitle
+
+    +media($tablet)
+      font-size: rem(20)
 
 .apps
   +padding(103px null)
@@ -28,13 +46,25 @@
   li
     +span-columns(8)
 
+    +media($tablet)
+      text-align: center
+
   figure
     +span-columns(1 of 8)
     +padding(30px 5px 30px null)
 
+    +media($tablet)
+      +fill-parent
+      float: none
+      +padding(0)
+      +margin(0)
+
   h2
     color: $black-40
     margin-bottom: 15px
+
+    +media($tablet)
+      +hide-on-mobile
 
   p
     color: $black-25
@@ -51,9 +81,16 @@
   img
     float: left
 
+    +media($tablet)
+      +size(49% 1%)
+
   figcaption
     color: white
     font-size: rem(16)
     line-height: rem(40)
     +span-columns(7)
     +padding(11.8% 43px)
+
+    +media($tablet)
+      +span-columns(4 of 8)
+      +padding(6.8% 28px)
