@@ -1,4 +1,8 @@
 .sobre
+  +media($mobile)
+    section.header
+      +padding(41px null null)
+
   .description
     +span-columns(9)
     font-size: rem(24)
@@ -40,7 +44,7 @@
 
     +media($mobile)
       img
-        +size(100% 1%)
+        +size(100% 100%)
 
   .about
     +at2x("about/highlight", "jpg", 100%)
@@ -55,7 +59,7 @@
       height: 480px
 
     +media($mobile)
-      height: 300px
+      height: 374px
       background-size: 100% 100%
 
     p
@@ -80,8 +84,8 @@
 
       +media($mobile)
         +margin(20px)
-        font-size: rem(14)
-        line-height: rem(16)
+        font-size: rem(10)
+        line-height: rem(24)
         text-align: left
 
     a
