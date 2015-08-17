@@ -24,6 +24,9 @@
     +media($tablet)
       +padding(86px null null)
 
+    +media($mobile)
+      +margin(null null 42px)
+
   +media($tablet)
     .number
       +hide-on-mobile
@@ -40,11 +43,22 @@
         float: none
         width: auto
 
+      +media($mobile)
+        +padding(null null 27px)
+
     figure
       +span-columns(5)
 
       +media($tablet)
         +span-columns(4 of 8)
+        float: none
+        +margin(0 auto)
+
+        &:last-child
+          +margin(null auto null null)
+
+      +media($mobile)
+        +span-columns(3 of 4)
         float: none
         +margin(0 auto)
 
@@ -72,6 +86,15 @@
       +media($tablet)
         text-align: center
 
+      +media($mobile)
+        +padding(0)
+        font-size: rem(18)
+        line-height: rem(22)
+
+    +media($mobile)
+      h4
+        font-size: rem(13)
+
     h4
       color: $black-2
       font-weight: normal
@@ -96,6 +119,13 @@
       right: -23px
       +size(29.5% 60%)
 
+    +media($mobile)
+      background-size: 30% auto
+      top: 209px
+      +size(20.3% 52%)
+      right: -6%
+
+
   .slick-dots
     +at2x("slider/dots", "png", 351px)
     background-repeat: no-repeat
@@ -116,6 +146,10 @@
 
       &:last-child
         margin-right: auto
+
+    +media($tablet)
+      +fill-parent
+      text-align: center
 
     li
       display: inline-block
@@ -189,6 +223,10 @@
   .slider
     height: 830px
 
+    +media($mobile)
+      position: relative
+      height: 680px
+
     .slick-slider
       height: 100%
 
@@ -208,11 +246,23 @@
       +media($tablet)
         width: flex-grid(8) + flex-gutter()
 
+      +media($mobile)
+        +fill-parent
+        position: absolute
+        z-index: 2
+        top: 50px
+
     .slider-info
       +span-columns(7)
 
       +media($tablet)
         +span-columns(4 of 8)
+
+      +media($mobile)
+        +fill-parent
+        z-index: 1
+        position: relative
+        +padding(42px 0)
 
     .slider-images
       figure
@@ -234,10 +284,18 @@
       background-color: rgba(#FFFFFF, .2)
       +size(112px 107px)
 
+      +media($mobile)
+        +size(37px 37px)
+
       b
         color: $yellow-50
         font-size: rem(100)
         +padding(null null null 40px)
+
+        +media($mobile)
+          font-size: rem(40)
+          +padding(null null null 12px)
+          line-height: rem(50)
 
     h3
       color: white
@@ -250,16 +308,25 @@
         line-height: rem(34)
         +margin(null null null 10px)
 
+      +media($mobile)
+        +margin(3px null null)
+
     p
       color: white
       clear: both
       font-size: rem(25)
       line-height: rem(35)
-      +padding(56px null null null)
+      +padding(56px null null)
 
       +media($tablet)
         font-size: rem(20)
         line-height: rem(30)
+
+      +media($mobile)
+        +padding(14px null null)
+        font-size: rem(14)
+        line-height: rem(18)
+        text-align: center
 
     .slick-slide img
       +transition(all .2s ease-in-out)
@@ -291,6 +358,9 @@
 
       +media($tablet)
         z-index: 2
+
+      +media($mobile)
+        top: 480px
 
     .slick-next
       right: 0

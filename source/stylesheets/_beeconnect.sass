@@ -33,6 +33,10 @@ section.header
     min-height: 616px
     +padding(51px null null)
 
+  +media($mobile)
+    min-height: 555px
+    overflow: hidden
+
   & + section
     background: white
 
@@ -56,6 +60,19 @@ blockquote
         img
           +size(99.3% 79%)
 
+      +media($mobile)
+        +fill-parent
+        float: none
+        position: absolute
+        text-align: center
+        top: 220px
+        left: 0
+        +size(100% 335px)
+        overflow: hidden
+
+        img
+          +size(81% auto)
+
     header,
     .download-app
       +span-columns(11)
@@ -72,6 +89,10 @@ blockquote
         +padding(null null null 0)
         +margin(null 0 null null)
 
+      +media($mobile)
+        +fill-parent
+
+
       &:last-child
         margin-left: 0
 
@@ -82,7 +103,7 @@ blockquote
 
     header
       +padding(145px null null null)
-      +margin(null null 50px null)
+      +margin(null null 50px)
       text-align: center
 
       +media($desktop)
@@ -94,6 +115,11 @@ blockquote
 
       +media($tablet)
         +padding(88px null null null)
+
+      +media($mobile)
+        +fill-parent
+        +padding(0)
+        +margin(null null 0)
 
     h1
       @extend %h1-font-size
@@ -107,11 +133,19 @@ blockquote
         text-align: left
         +margin(null null 24px)
 
+      +media($mobile)
+        text-align: center
+        font-size: rem(20)
+        line-height: rem(24)
+
     h2
       @extend %subtitle
 
       +media($tablet)
         text-align: left
+
+      +media($mobile)
+        +hide-on-mobile
 
     ul
       overflow: hidden

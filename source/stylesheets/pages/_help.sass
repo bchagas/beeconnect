@@ -4,8 +4,15 @@
   +padding(36px null null)
   text-align: center
 
+  +media($mobile)
+    font-size: rem(25)
+    line-height: rem(35)
+
 .ajuda
   .header
+    +media($mobile)
+      min-height: 385px
+
     h2
       @extend %header-text
 
@@ -13,10 +20,14 @@
     padding-top: 66px
 
     +media($desktop)
-      +margin(null 3%)
+      .content
+        +margin(null 3%)
 
     +media($tablet)
-      +margin(null 3%)
+      +padding(13px null null)
+
+      .content
+        +margin(null 3%)
 
     > .content
       background-color: $blue-2
@@ -41,6 +52,10 @@
     li
       +margin(null 0)
       +size(50% auto)
+
+      +media($mobile)
+        display: block
+        +fill-parent
 
   .all-questions
     nav
@@ -109,9 +124,11 @@
     +margin(65px auto)
     float: none
     overflow: hidden
-
     +send-button(#387AD4)
     +inputs
+
+    +media($mobile)
+      +fill-parent
 
     input[id="search"]
       background-color: transparent

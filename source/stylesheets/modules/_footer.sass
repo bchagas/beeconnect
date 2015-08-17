@@ -14,6 +14,12 @@ body
         img
           +size(219px 53px)
 
+      +media($mobile)
+        +span-columns(2 of 4)
+
+        img
+          +size(116px 28px)
+
     a
       color: $black-30
       @extend %link-size
@@ -30,6 +36,11 @@ body
         +justify-content(space-between)
         +padding(null 0)
 
+      +media($mobile)
+        +fill-parent
+        +display(flex)
+        +justify-content(space-between)
+
     .social
       +span-columns(3)
       +shift(2)
@@ -43,8 +54,17 @@ body
         +span-columns(2 of 8)
         +shift(2 of 8)
         +display(flex)
-        +margin(null 0 null null)
         +justify-content(space-between)
+        +margin(null 0 null null)
+
+      +media($mobile)
+        position: absolute
+        top: -4px
+        right: 2%
+        +span-columns(2 of 4)
+        +display(flex)
+        +justify-content(space-between)
+        +margin(null 0)
 
     .app-rules,
     .copyright
@@ -67,3 +87,7 @@ body
         color: $blue-30
         font-size: rem(14)
         text-decoration: underline
+
+    +media($mobile)
+      .content
+        position: relative

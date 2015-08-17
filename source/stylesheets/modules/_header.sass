@@ -1,6 +1,9 @@
 body
   > header
-    padding-top: 65px
+    +padding(65px null null)
+
+    +media($mobile)
+      +padding(38px null null)
 
     .logo
       @extend %default-logo
@@ -10,6 +13,12 @@ body
 
         img
           +size(219px 53px)
+
+      +media($mobile)
+        +span-columns(2 of 4)
+
+        img
+          +size(132px 32px)
 
     nav
       +span-columns(9)
@@ -21,6 +30,11 @@ body
         +shift(3 of 8)
         +margin(13px null null)
         position: relative
+
+      +media($mobile)
+        +span-columns(1 of 4)
+        +shift(1 of 4)
+        +margin(2px null null)
 
     ul
       +display(flex)

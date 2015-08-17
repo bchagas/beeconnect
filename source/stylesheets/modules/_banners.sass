@@ -11,6 +11,10 @@
     height: 258px
     +padding(60px null null)
 
+  +media($mobile)
+    height: auto
+    +padding(12px null)
+
   header
     +span-columns(10)
 
@@ -26,6 +30,12 @@
       +span-columns(1 of 8)
       +shift(1 of 8)
 
+    +media($mobile)
+      +padding(20px null null)
+
+      img
+        +size(36% 1%)
+
   h1
     @extend %h1-font-size
     +margin(null null 17px)
@@ -34,14 +44,24 @@
       font-size: rem(40)
       +margin(null null 10px)
 
+    +media($mobile)
+      font-size: rem(22)
+      font-weight: normal
+
   p
     @extend %subtitle
 
     +media($tablet)
       font-size: rem(20)
 
+    +media($mobile)
+      +hide-on-mobile
+
 .apps
   +padding(103px null)
+
+  +media($mobile)
+    +hide-on-mobile
 
   li
     +span-columns(8)
@@ -84,6 +104,9 @@
     +media($tablet)
       +size(49% 1%)
 
+    +media($mobile)
+      +hide-on-mobile
+
   figcaption
     color: white
     font-size: rem(16)
@@ -94,3 +117,8 @@
     +media($tablet)
       +span-columns(4 of 8)
       +padding(6.8% 28px)
+
+    +media($mobile)
+      +fill-parent
+      text-align: center
+      +padding(84px null)
