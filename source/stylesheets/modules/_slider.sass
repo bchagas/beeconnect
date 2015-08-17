@@ -205,8 +205,14 @@
       float: left
       overflow: hidden
 
+      +media($tablet)
+        width: flex-grid(8) + flex-gutter()
+
     .slider-info
       +span-columns(7)
+
+      +media($tablet)
+        +span-columns(4 of 8)
 
     .slider-images
       figure
@@ -216,6 +222,9 @@
       background-color: $yellow-50
       height: 100%
       +padding(null 30px)
+
+      +media($tablet)
+        +padding(null 12px)
 
     .number,
     h3
@@ -236,6 +245,11 @@
       line-height: rem(39)
       +margin(42px null null 22px)
 
+      +media($tablet)
+        font-size: rem(30)
+        line-height: rem(34)
+        +margin(null null null 10px)
+
     p
       color: white
       clear: both
@@ -243,16 +257,26 @@
       line-height: rem(35)
       +padding(56px null null null)
 
+      +media($tablet)
+        font-size: rem(20)
+        line-height: rem(30)
+
     .slick-slide img
       +transition(all .2s ease-in-out)
       +size(333px 585px)
       margin: 55px auto 0
       opacity: .2
 
+      +media($tablet)
+        +size(290px 522px)
+
     .slick-center img
       +transition(all .2s ease-in-out)
       +size(433px 760px)
       opacity: 10
+
+      +media($tablet)
+        +size(367px 643px)
 
     .slick-prev,
     .slick-next
@@ -264,6 +288,9 @@
       font-size: rem(22)
       outline: none
       position: absolute
+
+      +media($tablet)
+        z-index: 2
 
     .slick-next
       right: 0

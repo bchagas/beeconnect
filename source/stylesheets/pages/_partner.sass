@@ -16,11 +16,27 @@
       +span-columns(6 of 12)
       +shift(0)
 
+    +media($tablet)
+      +span-columns(5 of 8)
+      +shift(0)
+      float: none
+      +margin(0 auto)
+
+      &:last-child
+        +margin(41px auto null)
+
   .description
     +padding(70px 88px null null)
 
     +media($desktop)
       +padding(null 0 null null)
+
+    +media($tablet)
+      +fill-parent
+      float: none
+      +margin(0 auto)
+      +padding(0)
+      text-align: center
 
     p
       font-size: rem(35)
@@ -30,6 +46,11 @@
 
       +media($desktop)
         font-size: rem(28)
+        letter-spacing: normal
+
+      +media($tablet)
+        font-size: rem(20)
+        line-height: rem(28)
         letter-spacing: normal
 
     a
@@ -59,13 +80,35 @@
       +padding(null 20px)
       text-align: center
 
+      +media($tablet)
+        +margin(null 0)
+        width: 32.48387%
+
+        &:nth-child(7n),
+        &:last-child
+          width: 31.3871%
+
+        &:nth-child(7n)
+          +margin(null null null -14%)
+
       &.last
         +margin(null 0)
 
     figure
       +size(auto 91px)
-      margin-bottom: 20px
+      +margin(null null 20px)
 
   +media($desktop)
     .slider .content
       padding: 0
+
+  +media($tablet)
+    .slider .content
+      padding: 0
+
+      img
+        +margin(114px null null)
+
+    .slick-list
+      padding: 0 !important
+
