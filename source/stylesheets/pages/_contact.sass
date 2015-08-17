@@ -1,4 +1,9 @@
 .contato
+  .header
+    +media($mobile)
+      min-height: 385px
+
+.contato
   color: $black-42
 
   .header
@@ -12,11 +17,17 @@
     h2
       font-size: rem(50)
 
+      +media($mobile)
+        font-size: rem(30)
+
   aside
     +span-columns(5)
 
     +media($tablet)
       +span-columns(4 of 8)
+
+    +media($mobile)
+      +fill-parent
 
     h3,
     a,
@@ -24,6 +35,10 @@
     address
       font-size: rem(21)
       line-height: rem(35)
+
+      +media($mobile)
+        font-size: rem(14)
+        line-height: rem(18)
 
     p
       color: lighten($black-42, 30%)
@@ -47,6 +62,9 @@
     +media($tablet)
       +span-columns(4 of 8)
       +shift(0)
+
+    +media($mobile)
+      +hide-on-mobile
 
   .actions li
     text-align: right
