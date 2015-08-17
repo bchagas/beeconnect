@@ -15,6 +15,9 @@
   aside
     +span-columns(5)
 
+    +media($tablet)
+      +span-columns(4 of 8)
+
     h3,
     a,
     p,
@@ -38,9 +41,12 @@
   form
     +span-columns(10)
     +shift(1)
-
     +inputs
     +send-button
+
+    +media($tablet)
+      +span-columns(4 of 8)
+      +shift(0)
 
   .actions li
     text-align: right
