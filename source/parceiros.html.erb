@@ -2,39 +2,41 @@
 title: beeConnect - Parceiros beeConnect
 ---
 
-<section class="header">
-  <div class="content">
-    <div class="description">
-      <p>Conectamos a marca ao consumidor gerando inteligência e interatividade</p>
-      <%= link_to "Criar conta", "" %>
-    </div>
+<% content_for :header do %>
+  <section class="hero">
+    <div class="content">
+      <div class="description">
+        <p>Conectamos a marca ao consumidor gerando inteligência e interatividade</p>
+        <%= link_to "Criar conta", "" %>
+      </div>
 
-    <div class="partner-form">
-      <form>
-        <legend>
-          <span class="title">Login</span>
-          <span class="subtitle">
-            Se você já é parceiro,
-            faça o login para gerenciar suas campanhas
-            e acompanhar seus resultados
-          </span>
-        </legend>
-        <fieldset class="inputs">
-          <ol>
-            <li class="input"><input type="email" placeholder="Conta" /></li>
-            <li class="input"><input type="password" placeholder="Senha" /></li>
-          </ol>
-        </fieldset>
+      <div class="partner-form">
+        <form>
+          <legend>
+            <span class="title">Login</span>
+            <span class="subtitle">
+              Se você já é parceiro,
+              faça o login para gerenciar suas campanhas
+              e acompanhar seus resultados
+            </span>
+          </legend>
+          <fieldset class="inputs">
+            <ol>
+              <li class="input"><input type="email" placeholder="Conta" /></li>
+              <li class="input"><input type="password" placeholder="Senha" /></li>
+            </ol>
+          </fieldset>
 
-        <fieldset class="actions">
-          <ol>
-            <li><button type="submit">Aceitar</button></li>
-          </ol>
-        </fieldset>
-      </form>
+          <fieldset class="actions">
+            <ol>
+              <li><button type="submit">Aceitar</button></li>
+            </ol>
+          </fieldset>
+        </form>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+<% end %>
 
 <blockquote>
   O beeConnect está presente em todo o ciclo de compra do usuário,

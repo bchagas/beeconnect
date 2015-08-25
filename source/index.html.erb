@@ -2,23 +2,25 @@
 title: beeConnect - Com o beeConnect você ganha para fazer compras
 ---
 
-<section class="header">
-  <div class="content">
-    <figure>
-      <%= image_tag_with_at2x "home/iphone.png", class: "app-screenshot" %>
-    </figure>
+<% content_for :header do %>
+  <section class="hero">
+    <div class="content">
+      <figure>
+        <%= image_tag_with_at2x "home/iphone.png", class: "app-screenshot" %>
+      </figure>
 
-    <header>
-      <h1>Com o beeConnect você ganha para fazer compras</h1>
-      <h2>Nunca perca descontos e recompensas incríveis nos seus lugares favoritos</h2>
-    </header>
+      <header>
+        <h1>Com o beeConnect você ganha para fazer compras</h1>
+        <h2>Nunca perca descontos e recompensas incríveis nos seus lugares favoritos</h2>
+      </header>
 
-    <ul class="download-app">
-      <li><%= link_to image_tag_with_at2x("app-store-button.png"), "" %></li>
-      <li><%= link_to image_tag_with_at2x("google-play-button.png"), "" %></li>
-    </ul>
-  </div>
-</section>
+      <ul class="download-app">
+        <li><%= link_to image_tag_with_at2x("app-store-button.png"), "" %></li>
+        <li><%= link_to image_tag_with_at2x("google-play-button.png"), "" %></li>
+      </ul>
+    </div>
+  </section>
+<% end %>
 
 <section class="slider">
   <div class="content">

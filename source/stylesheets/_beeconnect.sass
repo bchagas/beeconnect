@@ -16,15 +16,17 @@ $folder: null
   @if $page == "contato"
     $folder: "contact"
 
-  .#{$page}
+  .#{$page} > header
     +at2x("#{$folder}/header", "jpg", 100%)
-    background-repeat: no-repeat
-    background-position: center top
+    background:
+      repeat: no-repeat
+      position: center center
+      size: 100%
 
     +media($tablet)
       background-size: auto 743px
 
-section.header
+section.hero
   color: white
   min-height: 570px
   +padding(68px null null)
@@ -49,7 +51,7 @@ blockquote
   text-align: center
 
 .index
-  section.header
+  section.hero
     figure
       +span-columns(5)
       height: 598px
@@ -105,6 +107,9 @@ blockquote
     header
       +padding(145px null null null)
       +margin(null null 50px)
+      font:
+        family: $helvetica
+        weight: bold
       text-align: center
 
       +media($desktop)

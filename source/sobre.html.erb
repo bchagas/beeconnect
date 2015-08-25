@@ -1,20 +1,21 @@
 ---
 title: beeConnect - Sobre o beeConnect
 ---
+<% content_for :header do %>
+  <section class="hero">
+    <div class="content">
+      <p class="description">
+        O app beeConnect foi desenvolvido pela beeConnect para ajudar
+        o cliente a descobrir os melhores produtos
+        e descontos nos seus lugares favoritos
+      </p>
 
-<section class="header">
-  <div class="content">
-    <p class="description">
-      O app beeConnect foi desenvolvido pela beeConnect para ajudar
-      o cliente a descobrir os melhores produtos
-      e descontos nos seus lugares favoritos
-    </p>
-
-    <figure>
-      <%= image_tag_with_at2x "about/iphone-android.png", class: "app-screenshot" %>
-    </figure>
-  </div>
-</section>
+      <figure>
+        <%= image_tag_with_at2x "about/iphone-android.png", class: "app-screenshot" %>
+      </figure>
+    </div>
+  </section>
+<% end %>
 
 <blockquote>
   Criando o futuro do mobile shopping
