@@ -36,12 +36,16 @@ body
         +shift(1 of 4)
         +margin(2px null null)
 
+      > ul
+        +media($tablet)
+          +hide-on-mobile
+
+        +media($mobile)
+          +hide-on-mobile
+
     ul
       +display(flex)
       +justify-content(space-between)
-
-      +media($tablet)
-        +hide-on-mobile
 
     a
       color: white
