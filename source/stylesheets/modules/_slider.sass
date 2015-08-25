@@ -164,26 +164,28 @@
       &:first-child
         +margin(null null null 0)
 
+      &#slick-slide00,
+      &#slick-slide01,
+      &#slick-slide02
+        background:
+          repeat: no-repeat
+          position: center 42px
+          size: 100%
+
       &#slick-slide00
         +at2x("icons/house", "png", 31px)
-        background-repeat: no-repeat
-        background-position: center 42px
 
         &.slick-active
           +at2x("icons/house-selected", "png", 31px)
 
       &#slick-slide01
         +at2x("icons/boutique", "png", 31px)
-        background-repeat: no-repeat
-        background-position: center 42px
 
         &.slick-active
           +at2x("icons/boutique-selected", "png", 31px)
 
       &#slick-slide02
         +at2x("icons/bag", "png", 31px)
-        background-repeat: no-repeat
-        background-position: center 42px
 
         &.slick-active
           +at2x("icons/bag-selected", "png", 31px)
