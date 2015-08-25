@@ -24,7 +24,7 @@ $folder: null
       size: cover
 
     +media($tablet)
-      background-size: auto 743px
+      background-size: cover
 
 section.hero
   color: white
@@ -32,8 +32,10 @@ section.hero
   +padding(68px null null)
 
   +media($tablet)
-    min-height: 616px
-    +padding(51px null null)
+    +padding(0 null null)
+
+    .content
+      +padding(null 0)
 
   +media($mobile)
     min-height: 555px
