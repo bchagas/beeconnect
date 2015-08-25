@@ -53,10 +53,14 @@ beeConnect.HelpCenter.Views.HelpCenterMenu = Backbone.View.extend({
 
   showTopics: function(event) {
     event.preventDefault();
-    this.$(".topics").slideUp();
 
     var el = $(event.target),
-        topics = el.parents("li").find("ul");
+        topics = el.parents("li").find("ul"),
+        href = el.attr("href"),
+        topic = el.parents("li#" + href);
+
+    this.$(".topics").slideUp();
+    $(".questions").find(".icon").text("+");
 
     this.setCurrent(el, ".questions");
 
@@ -65,6 +69,7 @@ beeConnect.HelpCenter.Views.HelpCenterMenu = Backbone.View.extend({
     }
 
     topics.slideDown();
+    topic.find(".icon").text("-");
   },
 
   setCurrent: function(el, context) {

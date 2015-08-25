@@ -86,7 +86,10 @@
         +margin(null 30px null)
 
       li
-        +margin(null null 15px)
+        +margin(null null 20px)
+
+        &:last-child
+          +margin(null null 0)
 
       a
         color: $blue-35
@@ -104,6 +107,11 @@
   .questions
     > li
       margin-bottom: 24px
+
+      .icon
+        color: $blue-35
+        float: right
+        font-size: rem(19)
 
       a
         color: $black-22

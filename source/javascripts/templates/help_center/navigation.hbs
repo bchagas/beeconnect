@@ -2,6 +2,7 @@
   {{#each menu}}
     <li id="{{parameterize this.title}}">
       <span class="title">{{link this.title this.title}}</span>
+      <span class="icon">+</span>
       {{#if this.questions}}
         <ul class="topics" data-target="{{parameterize this.title}}">
           {{#each this.questions }}
