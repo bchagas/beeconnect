@@ -13,6 +13,9 @@
     h2
       @extend %header-text
 
+    +media($desktop)
+      +padding(0 null null)
+
   header
     +padding(45px null null)
     margin-bottom: 33px
@@ -71,7 +74,3 @@
 
   .actions li
     text-align: right
-
-  +media($desktop)
-    section.header
-      min-height: 482px

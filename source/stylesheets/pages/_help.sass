@@ -6,6 +6,9 @@
   position: relative
   +transform(translateY(100%))
 
+  +media($desktop)
+    +padding(0 null)
+
   +media($tablet)
     +padding(0 null)
 
@@ -14,9 +17,12 @@
     line-height: rem(35)
 
 .ajuda
-  .hero
+  section.hero
     +media($mobile)
       min-height: 385px
+
+    +media($desktop)
+      +padding(0 null null)
 
     h2
       @extend %header-text
@@ -159,7 +165,3 @@
     button[type="submit"]
       +span-columns(3 of 10)
       +padding(14px)
-
-  +media($desktop)
-    section.header
-      min-height: 445px
