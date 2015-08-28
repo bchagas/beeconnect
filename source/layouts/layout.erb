@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.css" />
 
     <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag  "application", "page-transition" %>
+    <%= javascript_include_tag  "application", "page-transition", "mobile-navigation" %>
   </head>
 
   <body class="<%= page_classes %>">
@@ -70,6 +70,10 @@
     <script>
       $(document).ready(function() {
         beeConnect.setPageTransition("html, main");
+
+        if(isMobile()) {
+          beeConnect.mobileNavigation("nav > ul", ".mobile-nav");
+        }
       });
     </script>
     <%= javascript_include_tag "//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js" %>

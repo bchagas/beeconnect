@@ -1,6 +1,6 @@
 =mobile-nav
   background-color: #32353D
-  display: block
+  display: none
   position: absolute
   top: 0
   left: 0
@@ -40,8 +40,8 @@
     &.ios
       float: right
 
-=mobile-menu
-  display: block
+=mobile-logo
+  visibility: hidden
   left: 0
   right: 0
   position: absolute
@@ -110,13 +110,11 @@ body
       position: relative
 
     .mobile-logo
-      display: none
-
       +media($mobile)
-        +mobile-menu
+        +mobile-logo
 
       +media($tablet)
-        +mobile-menu
+        +mobile-logo
 
 .mobile-nav
   cursor: pointer
@@ -125,6 +123,8 @@ body
   +transform(rotate(0deg))
   +transition(.5s ease-in-out)
   +size(33px 23px)
+  position: relative
+  z-index: 5
 
   +media($tablet)
     display: block
