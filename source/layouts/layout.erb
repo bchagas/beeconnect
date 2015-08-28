@@ -71,9 +71,18 @@
       $(document).ready(function() {
         beeConnect.setPageTransition("html, main");
 
-        if(isMobile()) {
-          beeConnect.mobileNavigation("nav > ul", ".mobile-nav");
-        }
+          var isPadPortrait = (function(a){
+            var check = false;
+            if(/|ipad|/.test(a) && window.orientation === 0)
+              check = true;
+
+            return check;
+          });
+
+
+          if(isMobile() || isPadPortrait()) {
+            beeConnect.mobileNavigation("nav > ul", ".mobile-nav");
+          };
       });
     </script>
     <%= javascript_include_tag "//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js" %>

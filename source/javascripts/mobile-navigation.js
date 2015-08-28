@@ -5,6 +5,12 @@ beeConnect.mobileNavigation = function(menu, trigger) {
       logo = $(".mobile-logo"),
       page = $("body");
 
+  window.addEventListener("orientationchange", function() {
+    visibleAreaHeight = $(window).height();
+    menu.css({ "margin-top" : -Math.abs(visibleAreaHeight) });
+    logo.css({ "margin-top" : -Math.abs(visibleAreaHeight) });
+  });
+
   menu.css({ "margin-top" : -Math.abs(visibleAreaHeight) });
   logo.css({ "margin-top" : -Math.abs(visibleAreaHeight) });
 
