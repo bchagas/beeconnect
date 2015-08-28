@@ -57,7 +57,7 @@ beeConnect.HelpCenter.Views.HelpCenterMenu = Backbone.View.extend({
     var el = $(event.target),
         topics = el.parents("li").find("ul"),
         href = el.attr("href"),
-        topic = el.parents("li#" + href);
+        topic = el.parents("li");
 
     this.$(".topics").slideUp();
     $(".questions").find(".icon").text("+");

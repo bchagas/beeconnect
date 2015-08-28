@@ -31,7 +31,7 @@ Handlebars.registerHelper('link', function(text, url) {
   text = Handlebars.Utils.escapeExpression(text);
   url  = Handlebars.Utils.escapeExpression(url);
 
-  var result = '<a href="' + Handlebars.helpers.parameterize(url) + '">' + text + '</a>';
+  var result = '<a href="' + Handlebars.helpers.parameterize(url) + '">' + text + '<span class="icon">+</span></a>';
 
   return new Handlebars.SafeString(result);
 });
