@@ -46,7 +46,7 @@
       +padding(31px 43px)
 
     h2
-      +at2x("icons/cup", "png", 24px)
+      +at2x("icons/cup", "png", 24px, auto, true)
       background-repeat: no-repeat
       background-position: center left
       color: $blue-35
@@ -83,7 +83,10 @@
 
       h2
         color: #676767
-        font-size: rem(19)
+        font:
+          family: $montserrat
+          size: rem(19)
+          weight: bold
         line-height: rem(26)
         +margin(null null 20px)
 
@@ -124,12 +127,16 @@
 
       a
         color: $black-22
+        display: block
         font-size: rem(19)
 
         &:hover,
         &.current
           color: $blue-35
           font-weight: bold
+
+      .title > a.current
+        font-family: $montserrat
 
   .topics
     > li
