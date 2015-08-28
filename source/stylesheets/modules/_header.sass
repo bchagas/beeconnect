@@ -1,3 +1,55 @@
+=mobile-nav
+  background-color: #32353D
+  display: block
+  position: absolute
+  top: 0
+  left: 0
+  +size(100% 100%)
+  z-index: 4
+  +padding(40% 5% null)
+
+  li
+    clear: both
+    border-top: 1px solid #B3B3B3
+    display: block
+    text-align: center
+
+    a
+      color: #B3B3B3
+      font-size: rem(25)
+      +padding(15px null)
+
+    &:first-child
+      border: none
+
+    &.android,
+    &.ios
+      border: none
+      clear: initial
+      display: inline-block
+      +padding(50px null null)
+      width: 50%
+
+      a
+        color: white
+        font-size: rem(20)
+
+    &.android
+      float: left
+
+    &.ios
+      float: right
+
+=mobile-menu
+  display: block
+  left: 0
+  right: 0
+  position: absolute
+  width: 100%
+  z-index: 5
+  text-align: center
+  +padding(5% null null)
+
 body
   > header
     +padding(65px null null)
@@ -29,7 +81,6 @@ body
         +span-columns(1 of 8)
         +shift(3 of 8)
         +margin(13px null null)
-        position: relative
 
       +media($mobile)
         +span-columns(1 of 4)
@@ -38,10 +89,9 @@ body
 
       > ul
         +media($tablet)
-          +hide-on-mobile
-
+          +mobile-nav
         +media($mobile)
-          +hide-on-mobile
+          +mobile-nav
 
     ul
       +display(flex)
@@ -51,9 +101,22 @@ body
       color: white
       font-size: rem(18)
 
+    .android,
+    .ios
+      display: none
+
     nav a
       display: block
       position: relative
+
+    .mobile-logo
+      display: none
+
+      +media($mobile)
+        +mobile-menu
+
+      +media($tablet)
+        +mobile-menu
 
 .mobile-nav
   cursor: pointer

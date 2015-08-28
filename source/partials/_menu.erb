@@ -1,5 +1,7 @@
+<%= link_to image_tag_with_at2x("logo.png"), "/", class: "mobile-logo" %>
+
 <ul>
-  <% ["Sobre", "Parceiros", "Ajuda", "Contato"].each do |item| %>
-    <%= content_tag :li, link_to(item, "#{item.parameterize}.html") %>
+  <% ["Sobre", "Parceiros", "Ajuda", "Contato", "Android", "iOS"].each do |item| %>
+    <li class="<%= item.parameterize %>"><%= link_to item, "#{item.parameterize}.html" %></li>
   <% end %>
 </ul>
