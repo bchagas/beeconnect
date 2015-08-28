@@ -150,10 +150,14 @@
       +fill-parent
 
     input[id="search"]
-      background-color: transparent
+      +at2x("icons/search", "png", 17px, auto, true)
+      background:
+        repeat: no-repeat
+        color: transparent
+        position: 16px
       border-radius: 100px
       +span-columns(7 of 10)
-      +padding(14px)
+      +padding(14px 14px 14px 45px)
       font:
         family: $muli
         size: rem(20)
