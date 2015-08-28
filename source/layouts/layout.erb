@@ -50,7 +50,11 @@
       <div class="content">
         <h1 class="logo"><%= link_to image_tag_with_at2x("logo-color.png"), "/" %></h1>
 
-        <%= partial "partials/menu" %>
+        <ul>
+          <% ["Sobre", "Parceiros", "Ajuda", "Contato", "Android", "iOS"].each do |item| %>
+            <li class="<%= item.parameterize %>"><%= link_to item, "#{item.parameterize}.html" %></li>
+          <% end %>
+        </ul>
 
         <ul class="social">
           <% ["Facebook", "Twitter"].each do |social| %>
