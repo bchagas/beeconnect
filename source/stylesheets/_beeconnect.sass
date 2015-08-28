@@ -35,7 +35,7 @@ section.hero
       +padding(null 0)
 
   +media($mobile)
-    min-height: 555px
+    min-height: auto
     overflow: hidden
     +padding(28px null null)
 
@@ -65,17 +65,7 @@ blockquote
           +size(93.4% 79%)
 
       +media($mobile)
-        +fill-parent
-        float: none
-        position: absolute
-        text-align: center
-        top: 220px
-        left: 0
-        +size(100% 335px)
-        overflow: hidden
-
-        img
-          +size(81% auto)
+        +hide-on-mobile
 
     header,
     .download-app
