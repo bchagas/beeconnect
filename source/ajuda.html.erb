@@ -9,7 +9,7 @@ title: beeConnect - Precisando de ajuda?
 <% end %>
 
 <section class="top-questions">
-  <div class="content">
+  <div class="content desktop">
     <h2>Principais dúvidas</h2>
     <ul>
       <li><%= link_to "O que é beeConnect?", ""%></li>
@@ -17,6 +17,23 @@ title: beeConnect - Precisando de ajuda?
       <li><%= link_to "Porque minha conta sumiu?", ""%></li>
       <li><%= link_to "Onde posso encontrar as promoções?", ""%></li>
     </ul>
+  </div>
+</section>
+
+<section class="mobile-help">
+  <h2>Principais dúvidas</h2>
+
+  <div class="content">
+    <dl>
+      <dt>O que é o beeConnect?</dt>
+      <dd><p>O aplicativo beeConnect é o seu melhor companheiro na hora de fazer compras. Com ele você descobre os produtos e descontos incríveis nos seus lugares favoritos. No app você pode ver produtos na vitrine virtual e ganhar cupons de desconto exclusivos assim que entrar na loja.</p></dd>
+
+      <dt>Como usar o aplicativo beeConnect?</dt>
+      <dd><p>Após baixar o beeConnect e efetuar o seu login você terá acesso a todo conteúdo do app.</p><ol><li><b>Descubra descontos antes de ir às compras</b>Navegue pela vitrine virtual e veja as últimas tendências e descontos diários para que você nunca perca uma chance de economizar</li><li><b>Seja lembrado dos descontos ao entrar na loja</b>Assim que você entra na loja o app te lembra dos melhores descontos com o seu perfil, para que você não perca nenhuma promoção!</li><li><b>Ganhe descontos exclusivos em produtos na loja</b>Para gerar o cupom de desconto basta se aproximar fisicamente do produto que foi anunciado na vitrine virtual e clicar no botão “cupom”. Depois é só apresentar o cupom no caixa para ganhar o desconto.</li></ol></dd>
+
+      <dt>Onde posso encontrar as promoções?</dt>
+      <dd><p>Nós estamos trabalhando para que seja cada vez mais fácil encontrar produtos e ofertas próximas a você.</p><p>Para encontrar os estabelecimentos e lojas participantes, basta entrar no menu inicial e clicar no botão “Parceiros” Assim, você poderá visualizar os produtos disponíveis em cada loja, assim como sua localização.</p></dd>
+    </dl>
   </div>
 </section>
 
@@ -36,12 +53,14 @@ title: beeConnect - Precisando de ajuda?
   <%= javascript_include_tag "help/application", "help/initialize", "help/files" %>
 
   <script>
-    var options = <%= data.faq.questions.to_json.html_safe %>;
-    beeConnect.HelpCenter.initialize({
-      menu: options,
-      el: $(".all-questions nav"),
-      content: $(".answer"),
-      search: $(".search")
-    });
+    if(!navigator.userAgent.match(/iPhone/i)) {
+      var options = <%= data.faq.questions.to_json.html_safe %>;
+      beeConnect.HelpCenter.initialize({
+        menu: options,
+        el: $(".all-questions nav"),
+        content: $(".answer"),
+        search: $(".search")
+      });
+    }
   </script>
 <% end %>
