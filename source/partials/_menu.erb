@@ -2,6 +2,6 @@
 
 <ul>
   <% ["Sobre", "Parceiros", "Ajuda", "Contato", "Android", "iOS"].each do |item| %>
-    <li class="<%= item.parameterize %>"><%= link_to item, "#{item.parameterize}.html" %></li>
+    <li class="<%= item.parameterize %>"><%= link_to item, "#{item.parameterize}.html", class: active_link(item.parameterize) %></li>
   <% end %>
 </ul>

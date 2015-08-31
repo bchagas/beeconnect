@@ -54,6 +54,10 @@ helpers do
   def last_of(value, index)
     index % 4 === 3 ? "last" : ""
   end
+
+  def active_link(page)
+    current_page.path.include?(page) ? "active" : ""
+  end
 end
 
 set :css_dir, 'stylesheets'
