@@ -99,6 +99,10 @@
   overflow: hidden
   +fill-parent
 
+  figure
+    display: table
+    overflow: hidden
+
   img
     float: left
 
@@ -110,10 +114,13 @@
 
   figcaption
     color: white
-    font-size: rem(16)
+    font-size: rem(22)
     line-height: rem(40)
     +span-columns(7)
-    +padding(9.8% 43px)
+    float: none
+    +padding(null 43px)
+    display: table-cell
+    vertical-align: middle
 
     +media($tablet)
       +span-columns(4 of 8)

@@ -8,17 +8,7 @@ title: beeConnect - Precisando de ajuda?
   </section>
 <% end %>
 
-<section class="top-questions">
-  <div class="content desktop">
-    <h2>Principais dúvidas</h2>
-    <ul>
-      <li><%= link_to "O que é beeConnect?", ""%></li>
-      <li><%= link_to "Como usar o aplicativo beeConnect?", ""%></li>
-      <li><%= link_to "Porque minha conta sumiu?", ""%></li>
-      <li><%= link_to "Onde posso encontrar as promoções?", ""%></li>
-    </ul>
-  </div>
-</section>
+<section class="top-questions"></section>
 
 <section class="mobile-help">
   <h2>Principais dúvidas</h2>
@@ -58,6 +48,7 @@ title: beeConnect - Precisando de ajuda?
       beeConnect.HelpCenter.initialize({
         menu: options,
         el: $(".all-questions nav"),
+        topQuestions: $(".top-questions"),
         content: $(".answer"),
         search: $(".search")
       });

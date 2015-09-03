@@ -1,5 +1,6 @@
 beeConnect.HelpCenter.Views.HelpCenterMenu = Backbone.View.extend({
   template: HandlebarsTemplates["help_center/navigation"],
+  topQuestionsTemplate: HandlebarsTemplates["help_center/top-questions"],
 
   events: {
     "click .topics > li > a" : "getTopic",
@@ -8,11 +9,13 @@ beeConnect.HelpCenter.Views.HelpCenterMenu = Backbone.View.extend({
 
   initialize: function(options) {
     this.model = options.model;
+    this.topQuestionsEl = options.topQuestionsEl;
     this.eventAggregator.on("render:result", this.getResultTopic, this);
   },
 
   render: function() {
     this.$el.html(this.template(this.model.toJSON()));
+    this.topQuestionsEl.html(this.topQuestionsTemplate());
     this.$(".topics").slideUp();
   },
 

@@ -29,7 +29,8 @@ beeConnect.HelpCenter = {
 
     new beeConnect.HelpCenter.Views.HelpCenterMenu({
       model: helpCenterModel,
-      el: options.el
+      el: options.el,
+      topQuestionsEl: options.topQuestions
     }).render();
 
     new beeConnect.HelpCenter.Views.HelpCenterSearch({
