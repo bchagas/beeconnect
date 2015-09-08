@@ -7,7 +7,6 @@ beeConnect.HelpCenter = {
     var normalize_index = 1;
     var last_index = options.menu.length + normalize_index;
 
-
     // Create search index
     options.indice = [];
 
@@ -26,24 +25,27 @@ beeConnect.HelpCenter = {
     });
 
     var helpCenterModel = new beeConnect.HelpCenter.Models.HelpCenter(options);
+    var topQuestionsView = new beeConnect.HelpCenter.Views.topQuestions({
+      model: helpCenterModel
+    });
 
     new beeConnect.HelpCenter.Views.HelpCenterMenu({
       model: helpCenterModel,
       el: options.el,
-      topQuestionsEl: options.topQuestions
+      topQuestionsView: topQuestionsView
     }).render();
 
     new beeConnect.HelpCenter.Views.HelpCenterSearch({
       indice: options.indice,
-      el: options.search
+      el: $(".search")
     }).render();
 
     new beeConnect.HelpCenter.Views.HelpCenterSearchResults({
-      el: options.content
+      el: $(".answer")
     }).render();
 
     new beeConnect.HelpCenter.Views.HelpCenterContent({
-      el: options.content
+      el: $(".answer")
     }).render();
 
     Backbone.history.start();

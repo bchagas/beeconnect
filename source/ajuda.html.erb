@@ -47,10 +47,7 @@ title: beeConnect - Precisando de ajuda?
       var options = <%= data.faq.questions.to_json.html_safe %>;
       beeConnect.HelpCenter.initialize({
         menu: options,
-        el: $(".all-questions nav"),
-        topQuestions: $(".top-questions"),
-        content: $(".answer"),
-        search: $(".search")
+        el: $("main")
       });
     }
   </script>

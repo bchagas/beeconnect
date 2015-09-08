@@ -37,7 +37,6 @@ beeConnect.HelpCenter.Views.HelpCenterSearch = Backbone.View.extend({
       })[0];
     });
 
-    console.log(results);
     this.eventAggregator.trigger("render:results", results);
   },
 });

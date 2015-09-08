@@ -1,9 +1,10 @@
 <div class="content desktop">
   <h2>Principais dúvidas</h2>
   <ul>
-    <li><a data-topic="o-que-e-o-beeconnect">"O que é beeConnect?"</a></li>
-    <li><%= link_to "Como usar o aplicativo beeConnect?", ""%></li>
-    <li><%= link_to "Porque minha conta sumiu?", ""%></li>
-    <li><%= link_to "Onde posso encontrar as promoções?", ""%></li>
+    {{#each this}}
+      <li class="{{parameterize title}}">
+        <a href="" data-topic="{{parameterize title}}">{{title}}</a>
+      </li>
+    {{/each}}
   </ul>
 </div>

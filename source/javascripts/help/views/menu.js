@@ -1,22 +1,26 @@
 beeConnect.HelpCenter.Views.HelpCenterMenu = Backbone.View.extend({
   template: HandlebarsTemplates["help_center/navigation"],
-  topQuestionsTemplate: HandlebarsTemplates["help_center/top-questions"],
 
   events: {
     "click .topics > li > a" : "getTopic",
+    "click .top-questions ul > li > a" : "getTopic",
     "click .questions > li > span > a" : "showTopics",
   },
 
   initialize: function(options) {
     this.model = options.model;
-    this.topQuestionsEl = options.topQuestionsEl;
+    this.topQuestionsView = new beeConnect.HelpCenter.Views.topQuestions({
+      model: this.model,
+      el: this.$(".top-questions")
+    });
     this.eventAggregator.on("render:result", this.getResultTopic, this);
   },
 
   render: function() {
-    this.$el.html(this.template(this.model.toJSON()));
-    this.topQuestionsEl.html(this.topQuestionsTemplate());
+    this.$(".all-questions nav").html(this.template(this.model.toJSON()));
+    this.$(".top-questions").html(this.topQuestionsView.render());
     this.$(".topics").slideUp();
+    return this;
   },
 
   getResultTopic: function(url) {
@@ -36,6 +40,7 @@ beeConnect.HelpCenter.Views.HelpCenterMenu = Backbone.View.extend({
 
   getTopic: function(event) {
     event.preventDefault();
+
     var el = $(event.target),
         url = el.data("topic"),
         self = this;
