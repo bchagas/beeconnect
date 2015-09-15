@@ -31,7 +31,7 @@ body
       +padding(8px 29px null)
 
       +media($tablet)
-        +span-columns(4 of 8)
+        +span-columns(6 of 8)
         +display(flex)
         +justify-content(space-between)
         +padding(null 0)
@@ -40,6 +40,10 @@ body
         +fill-parent
         +display(flex)
         +justify-content(space-between)
+
+        .android,
+        .ios
+          +hide-on-mobile
 
     .social
       +span-columns(3)

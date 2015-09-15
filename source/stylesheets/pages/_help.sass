@@ -4,7 +4,7 @@
   +padding(36px null null)
   text-align: center
   position: relative
-  +transform(translateY(100%))
+  +transform(translateY(50%))
 
   +media($desktop)
     +padding(0 null)
@@ -20,9 +20,13 @@
   .mobile-help
     display: none
 
+    +media($mobile)
+      display: block
+
   section.hero
     +media($mobile)
       min-height: 385px
+      +padding(60px null null)
 
     +media($desktop)
       +padding(0 null null)
@@ -168,6 +172,7 @@
     +span-columns(12)
     +margin(65px auto)
     float: none
+    clear: both
     overflow: hidden
     +send-button(#387AD4)
     +inputs
@@ -215,7 +220,7 @@
     h2
       color: #387AD4
       text-align: center
-      +margin(30px null)
+      +padding(40px null)
 
     dt,
     dd

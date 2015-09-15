@@ -73,7 +73,7 @@
 
     <script>
       $(document).ready(function() {
-        beeConnect.setPageTransition("html, main");
+          beeConnect.setPageTransition(".hero");
 
           var isPadPortrait = (function(a){
             var check = false;
@@ -82,6 +82,7 @@
 
             return check;
           });
+
 
 
           if(isMobile() || isPadPortrait()) {
