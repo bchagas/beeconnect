@@ -6,7 +6,7 @@
     size: cover
   color: white
   height: 346px
-  +padding(93px null null)
+  +padding(115px null null)
 
   +media($tablet)
     height: 258px
@@ -80,7 +80,10 @@
       +fill-parent
       float: none
       +padding(0)
-      +margin(0)
+      +margin(0 0 20px)
+
+    +media($desktop)
+      +span-columns(2 of 8)
 
   h2
     color: $black-40

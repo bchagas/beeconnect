@@ -12,7 +12,7 @@ body
         +margin(null null 29px)
 
         img
-          +size(219px 53px)
+          +size(140px 35px)
 
       +media($mobile)
         +span-columns(2 of 4)
@@ -36,6 +36,11 @@ body
         +justify-content(space-between)
         +padding(null 0)
 
+        .android,
+        .ios
+          +hide-on-mobile
+
+      +media($desktop)
         .android,
         .ios
           +hide-on-mobile
