@@ -73,7 +73,9 @@
 
     <script>
       $(document).ready(function() {
-          beeConnect.setPageTransition(".hero");
+          if("<%= page_classes %>" !== "termos-e-condicoes") {
+            beeConnect.setPageTransition(".hero");
+          }
 
           var isPadPortrait = (function(a){
             var check = false;
