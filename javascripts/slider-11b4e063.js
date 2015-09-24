@@ -1,0 +1,1 @@
+beeConnect.slider=function(e,n){n=n||{},e.slick(n)};

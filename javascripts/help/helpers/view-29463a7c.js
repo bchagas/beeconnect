@@ -1,1 +1,0 @@
-Handlebars.registerHelper("parameterize",function(e){return e.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"")}),Handlebars.registerHelper("link",function(e,r){e=Handlebars.Utils.escapeExpression(e),r=Handlebars.Utils.escapeExpression(r);var a='<a href="'+Handlebars.helpers.parameterize(r)+'">'+e+"</a>";return new Handlebars.SafeString(a)});

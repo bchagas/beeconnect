@@ -1,0 +1,1 @@
+beeConnect.HelpCenter.Models.HelpCenter=Backbone.Model.extend({urlRoot:"/ajuda/",fetchCurrent:function(e){return e.url=this.urlRoot+e.data,Backbone.Model.prototype.fetch.call(this,e)}});
